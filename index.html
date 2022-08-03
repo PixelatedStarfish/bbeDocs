@@ -1,0 +1,2288 @@
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<style>
+body {
+   font-family: Tahoma, sans-serif;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+</style>
+<meta charset="UTF-8"/>
+<title>BunnyBell Docs</title>
+
+<body style="background-color:lightgoldenrodyellow;">
+
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"2ac1dbadd4297a72b10fff60","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Bbe_doc_downloadable","wgTitle":"Bbe doc downloadable","wgCurRevisionId":98321,"wgRevisionId":98321,"wgArticleId":15859,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Bbe_doc_downloadable","wgRelevantArticleId":15859,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready",
+"user.styles":"ready","user":"ready","user.options":"loading","skins.vector.styles.legacy":"ready","jquery.tablesorter.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","jquery.tablesorter","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=jquery.tablesorter.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.36.1"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Esolang (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//esolangs.org/w/api.php?action=rsd"/>
+<link rel="license" href="/wiki/Esolang:Copyrights"/>
+<link rel="alternate" type="application/atom+xml" title="Esolang Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://esolangs.org/wiki/Bbe_doc_downloadable"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Bbe_doc_downloadable rootpage-Bbe_doc_downloadable skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+     <a id="top"></a>
+     <div id="siteNotice" class="mw-body-content"></div>
+     <div class="mw-indicators mw-body-content">
+     </div>
+     <h1 id="firstHeading" class="firstHeading" >BunnyBell Docs</h1>
+     <div id="bodyContent" class="mw-body-content">
+          <div id="siteSub" class="noprint">From Esolang</div>
+          <div id="contentSub"></div>
+          <div id="contentSub2"></div>
+          
+          <div id="jump-to-nav"></div>
+          <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>
+</p><p><br />
+</head>
+    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>BunnyBell is a programming language created by User:PixelatedStarfish in 2022 and it is designed to be a simple, practical language for learning to program. Given this, showcasing this language on the esolangs wiki is certainly ironic, but the esolangs wiki is convenient. 
+</p><p>BunnyBell was initially created as a second major version of MacroBeep, designed to support subroutines. MacroBeep v2.0 diverged to the point where it was best renamed, as a new language entirely.
+</p><p>There are two versions of this language, F1 and F2. The documentation describes F1, in which functions are first class. The interpreter will first be written for F2. In F2 untyped words cannot be passed, returned or assigned, and calls cannot be returned. In F2 functions are second class, which is easier to implement.
+</p><p>Alternate spellings are Bunnybell or Bunny Bell. The current version is version 1.2 and the language file extension is <code>.bbe</code>
+</p><p><br />
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<li class="toclevel-1 tocsection-1"><a href="#Factors_in_Design"><span class="tocnumber">1</span> <span class="toctext">Factors in Design</span></a>
+<li class="toclevel-1 tocsection-4"><a href="#Influences:_Shameless_Theft"><span class="tocnumber">2</span> <span class="toctext">Influences: Shameless Theft</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Acknowledgements"><span class="tocnumber">3</span> <span class="toctext">Acknowledgements</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Design_Goals:_Why_Use_BunnyBell.3F"><span class="tocnumber">4</span> <span class="toctext">Design Goals: Why Use BunnyBell?</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Program_Examples"><span class="tocnumber">5</span> <span class="toctext">Program Examples</span></a>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Syntax"><span class="tocnumber">6</span> <span class="toctext">Syntax</span></a>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#Compiling_and_Interpreting"><span class="tocnumber">7</span> <span class="toctext">Compiling and Interpreting</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#Variables"><span class="tocnumber">8</span> <span class="toctext">Variables</span></a>
+</li>
+<li class="toclevel-1 tocsection-25"><a href="#Buckets.2C_Indexing.2C_and_Nesting"><span class="tocnumber">9</span> <span class="toctext">Buckets, Indexing, and Nesting</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#Strings_and_Escapes"><span class="tocnumber">10</span> <span class="toctext">Strings and Escapes</span></a>
+<li class="toclevel-1 tocsection-29"><a href="#Identifiers:_How_to_Use_the_Identifying_Operator_.40"><span class="tocnumber">11</span> <span class="toctext">Identifiers: How to Use the Identifying Operator  <span>@</span></span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#Labels_and_Conditionals"><span class="tocnumber">12</span> <span class="toctext">Labels and Conditionals</span></a>
+</li>
+<li class="toclevel-1 tocsection-33"><a href="#Functions"><span class="tocnumber">13</span> <span class="toctext">Functions</span></a>
+<li class="toclevel-1 tocsection-39"><a href="#Structs:_Defining_a_Data_Type"><span class="tocnumber">14</span> <span class="toctext">Structs: Defining a Data Type</span></a></li>
+<li class="toclevel-1 tocsection-40"><a href="#Macros"><span class="tocnumber">15</span> <span class="toctext">Macros</span></a>
+</li>
+<li class="toclevel-1 tocsection-43"><a href="#Files"><span class="tocnumber">16</span> <span class="toctext">Files</span></a></li>
+<li class="toclevel-1 tocsection-44"><a href="#Errors"><span class="tocnumber">17</span> <span class="toctext">Errors</span></a>
+<li class="toclevel-1 tocsection-50"><a href="#Commands"><span class="tocnumber">18</span> <span class="toctext">Commands</span></a>
+<li class="toclevel-1 tocsection-60"><a href="#Using_the_Interpreter"><span class="tocnumber">19</span> <span class="toctext">Using the Interpreter</span></a>
+</li>
+<li class="toclevel-1 tocsection-65"><a href="#The_Linker:_Include_Commands"><span class="tocnumber">20</span> <span class="toctext">The Linker: Include Commands</span></a>
+</li>
+<li class="toclevel-1 tocsection-69"><a href="#Libraries"><span class="tocnumber">21</span> <span class="toctext">Libraries</span></a>
+</li>
+<li class="toclevel-1 tocsection-72"><a href="#Proof_of_Turing_Completeness"><span class="tocnumber">22</span> <span class="toctext">Proof of Turing Completeness</span></a>
+<li class="toclevel-1 tocsection-74"><a href="#Syntax_Highlighting"><span class="tocnumber">23</span> <span class="toctext">Syntax Highlighting</span></a>
+</li>
+<li class="toclevel-1 tocsection-85"><a href="#Index"><span class="tocnumber">25</span> <span class="toctext">Index</span></a>
+<li class="toclevel-1 tocsection-128"><a href="#ASCII_Table_2"><span class="tocnumber">26</span> <span class="toctext">ASCII Table</span></a></li>
+<li class="toclevel-1 tocsection-129"><a href="#Sources"><span class="tocnumber">27</span> <span class="toctext">Sources</span></a></li>
+</div>
+<h2><span class="mw-headline" id="Factors_in_Design">Factors in Design</span></h2>
+<p>Always write the simplest code you can. Never implement a complicated algorithm when a simple one will do.
+</p>
+<h3><span class="mw-headline" id="On_Languages_Designed_for_Pedagogy:_Thoughts_on_Stacking_Blocks">On Languages Designed for Pedagogy: Thoughts on Stacking Blocks</span></h3>
+<p>Many languages with a pedagogical design philosophy are written for children. Such languages typically employ a from of graphics based coding in specialized IDEs (Integrated Development Environments) in which programming is accomplished by clicking and dragging colorful blocks. These blocks have statements written on them and fit together like puzzle pieces. In general, I believe these languages are a success. A child can enjoy programming a video game, or an animated story without dealing with abstract data structures and advanced concepts in object oriented programming. Instinctively, one can learn how to read source code and debug it; how to use loops, variables, and conditional statements. Then it comes time to get bolder, try out some data structures. Code gets long, hundreds, or even thousands of blocks long. The IDE starts to slow and lag. The programmer hits a ceiling, and it comes time to transition to a more efficient language, one that describes source with efficient, computer-friendly text. That is the hard part.
+</p><p>Most high-level language are not based on stacking colorful blocks. They have keywords instead. In a language like Scratch, blocks are commands, or arguments for commands. Even when a block is completely isolated from your program, you can click on it and watch it do something. A cat goes left. A variable is set. A list is emptied. Not all keywords have this property. Many keywords modify groups of statements (which are also called blocks and opened and closed with braces. I call them groups here to avoid confusion.) The if keyword makes this block an if statement. The fn keyword means this group is a function. The private keyword modifies the fn keyword, indicating this function cannot be accessed outside the encapsulating class. Keywords can express abstract syntax, but many do not constitute a serviceable program in isolation. They do not do anything without context. This is one of a few factors that makes transitioning from Scratch to a C-style language hard.
+</p><p>BunnyBell commands are designed to be at a halfway point between Scratch blocks and C-style keywords.  Most commands are programs that operates independent of other commands, in a manner similar to a Scratch block, or a function. However, BunnyBell commands are also versatile enough to describe functions, macros, and data structures, in manner similar to a C-style language. 
+</p>
+<h3><span id="Clarity:_Why_no_Braces?"></span><span class="mw-headline" id="Clarity:_Why_no_Braces.3F">Clarity: Why no Braces?</span></h3>
+<p>Many people like braces. <code>from future import __braces__</code> is a joke among python programmers. Yes, braces are great for delineating blocks of statements, but they are easily disorganized and do not describe the blocks well. Consider this, often found at the end of a source file:
+</p>
+<pre>}
+  }}
+}
+</pre>
+<p>What are they enclosing? Which opening braces do they close? How does deleting one effect source? Nothing is clear about this syntax, a comment is needed for each brace. Something more descriptive is possible:
+</p>
+<pre><span style="color: #bd5187;">struct</span> <span style="color: #b45a3c;">@foo</span>
+<span style="color: #655d5d;"> #statements</span>
+<span style="color: #bd5187;">_struct</span>
+</pre>
+<p>Even if <code>_struct</code> is the only statement shown, it is still clear that it describes the end of a struct.
+</p>
+<h2><span class="mw-headline" id="Influences:_Shameless_Theft">Influences: Shameless Theft</span></h2>
+<ul><li>Structs, Macros, and Includes come from C.</li>
+<li>The command syntax comes from assembly languages like ARM, and block-based languages like Scratch.</li>
+<li>The call trace and data types are adapted from Java (and ultimately, C).</li>
+<li>The format for error messages is adapted from Python.</li>
+<li>Clojure influenced the syntax of functions, such that functions are first class, rather than second class.</li></ul>
+<h2><span class="mw-headline" id="Acknowledgements">Acknowledgements</span></h2>
+<p>Thank you to the Skidmore College faculty, O'Connell, Dufour, Eckmann,
+Read, Reiley, and Prasad. I am glad to have my degree in computer science!
+I would also like to thank Bringas, Kravsky, and Lee for their tutelage,
+patience, and inspiration. BunnyBell would not exist without the esolangs wiki
+and the work of youtuber User:Truttle1. 
+</p><p>Thanks to User:Gapples2 for their questions, comments, and insights. This language is better for them.
+</p><p>Of course I should thank my loved ones for their support.
+</p>
+<h2><span id="Design_Goals:_Why_Use_BunnyBell?"></span><span class="mw-headline" id="Design_Goals:_Why_Use_BunnyBell.3F">Design Goals: Why Use BunnyBell?</span></h2>
+<p>This language designed to learn by tinkering. It is designed for students to practice essential programming skills, such as tracing, debugging, and memory management.
+</p><p>Someone can learn to code with any programming language, but few are designed for learning, and fewer still are designed for an adult learner. Why is transitioning from a graphical, block-based language, to a text-based one so hard? Well, there are constructs and conventions to memorize. There might even be three different kinds of grouping symbols: (parentheses), [brackets], {braces}. A new programmer has a lot questions. How do I install this? Which version am I using? How do I do this or that? What is this thing work again? What does this error mean? BunnyBell is designed to ensure a new programmer can stop stressing, and focus on expressing their programs in code.
+</p>
+<ul><li>BunnyBell has a simplified syntax, for programs that are easier to write, organize, trace, and debug.</li>
+<li>Lexemes are descriptive, such that the tokens they represent are clearly indicated.</li>
+<li>Memory is always bound to function calls, which eliminates confusing design patterns while maintaining usability.</li></ul>
+<h2><span class="mw-headline" id="Program_Examples">Program Examples</span></h2>
+<h3><span class="mw-headline" id="Hello_World">Hello World</span></h3>
+<p>Outputs “Hello World” to the console.
+</p>
+<pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@main</span>
+&#160;<span style="color: #bd5187;">out</span> <span style="color: #5485b6;">"Hello World" </span>
+&#160;<span style="color: #bd5187;">return </span>
+</pre>
+<h3><span class="mw-headline" id="Truth_Machine">Truth Machine</span></h3>
+<p>A problem by User:Keymaker to demonstrate usability. It takes a 0 or a 1. If it gets a 1 it outputs an endless sequence of ones. Otherwise it prints 0.
+</p>
+<pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@main</span>
+ <span style="color: #bd5187;">int</span> <span style="color: #b45a3c;">@c</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:input</span> <span style="color:#5485b6;">"int"</span><span style="color: #031930;">)</span>
+ <span style="color: #bd5187;">beq</span> <span style="color: #a06e3b;">&amp;c</span> <span style="color: #a06e3b;">0</span> <span style="color: #031930;">Terminate</span>
+<span style="color: #bd5187;"> label</span> <span style="color: #b45a3c;">@Forever</span>
+<span style="color: #bd5187;">  out</span> <span style="color: #a06e3b;">1</span>
+<span style="color: #bd5187;">  goto</span> <span style="color: #031930;">Forever</span>
+<span style="color: #bd5187;"> label</span> <span style="color: #b45a3c;">@Terminate</span>
+<span style="color: #bd5187;">  out</span> <span style="color: #a06e3b;">0</span>
+<span style="color: #bd5187;"> return</span>
+</pre>
+<h3><span id="Cat_(Echo)"></span><span class="mw-headline" id="Cat_.28Echo.29">Cat (Echo)</span></h3>
+<p>Outputs the input given.
+</p>
+<pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@main</span>
+&#160;<span style="color: #bd5187;">out</span> <span style="color: #5485b6;">"Feed the cat\n" </span>
+&#160;<span style="color: #bd5187;">out</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:input</span> <span style="color:#5485b6;">"string"</span><span style="color: #031930;">)</span>
+&#160;<span style="color: #bd5187;">return </span>
+</pre>
+<h3><span class="mw-headline" id="FizzBuzz">FizzBuzz</span></h3>
+<pre><span style="color: #bd5187;">include</span> <span style="color: #031930;">lib/Math.bbe</span> <br />
+<span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@main</span>
+ <span style="color: #bd5187;">char</span> <span style="color: #b45a3c;">@c</span>
+&#160;<span style="color: #bd5187;">int</span> <span style="color: #b45a3c;">@i</span> <span style="color: #a06e3b;">0</span>
+ <span style="color: #bd5187;">label</span> <span style="color: #b45a3c;">@loop</span>
+  <span style="color: #bd5187;">beq</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:Math</span>.<span style="color: #bd5187;">mod</span> <span style="color: #a06e3b;">&amp;i</span> <span style="color: #a06e3b;">15</span> <span style="color: #a06e3b;">0</span><span style="color: #031930;">)</span> <span style="color: #031930;">FizzBuzz</span>
+  <span style="color: #bd5187;">beq</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:Math</span><span style="color: #031930;">.</span><span style="color: #bd5187;">mod</span> <span style="color: #a06e3b;">&amp;i</span> <span style="color: #a06e3b;">5</span> <span style="color: #a06e3b;">0</span><span style="color: #031930;">)</span> <span style="color: #031930;">Buzz</span>
+  <span style="color: #bd5187;">beq</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:Math</span><span style="color: #031930;">.</span><span style="color: #bd5187;">mod</span> <span style="color: #a06e3b;">&amp;i</span> <span style="color: #a06e3b;">3</span> <span style="color: #a06e3b;">0</span><span style="color: #031930;">)</span> <span style="color: #031930;">Fizz</span>
+ <span style="color: #bd5187;">goto</span> <span style="color: #031930;">nonCase</span><br />
+&#160;<span style="color: #bd5187;">label</span> <span style="color: #b45a3c;">@Fizz</span>
+&#160;&#160;<span style="color: #bd5187;">out</span> <span style="color: #5485b6;">"Fizz\n" </span>
+ <span style="color: #bd5187;">goto</span> <span style="color: #031930;">loopEnd</span> <br />
+&#160;<span style="color: #bd5187;">label</span> <span style="color: #b45a3c;">@Buzz</span>
+&#160;&#160;<span style="color: #bd5187;">out</span> <span style="color: #5485b6;">"Buzz\n" </span>
+ <span style="color: #bd5187;">goto</span> <span style="color: #031930;">loopEnd</span><br />
+&#160;<span style="color: #bd5187;">label</span> <span style="color: #b45a3c;">@FizzBuzz</span>
+&#160;&#160;<span style="color: #bd5187;">out</span> <span style="color: #5485b6;">"FizzBuzz\n" </span>
+ <span style="color: #bd5187;">goto</span> loopEnd<br />
+&#160;<span style="color: #bd5187;">label</span> <span style="color: #b45a3c;">@nonCase</span>
+&#160;&#160;<span style="color: #bd5187;">out</span> <span style="color: #a06e3b;">&amp;i</span>
+&#160;&#160;<span style="color: #bd5187;">out</span> <span style="color: #5485b6;">"\n"</span><br />
+&#160;<span style="color: #bd5187;">label</span> <span style="color: #b45a3c;">@loopEnd</span>
+&#160;&#160;<span style="color: #bd5187;">give</span> <span style="color: #a06e3b;">&amp;i</span> <span style="color: #a06e3b;">1</span>
+&#160; <span style="color: #bd5187;">bleq</span> <span style="color: #a06e3b;">&amp;i</span> <span style="color: #a06e3b;">100</span> <span style="color: #031930;">loop</span> 
+&#160;<span style="color: #bd5187;">return </span>
+</pre>
+<h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
+<h3><span class="mw-headline" id="Statements">Statements</span></h3>
+<p>Statements are a single line of code that are interpreted to run a program.
+Each statement starts with a command, which can take arguments.  The arguments for a command can be separated by tabs or spaces.
+</p>
+<pre><span style="color: #bd5187;">command</span> <span style="color: #031930;">arg1</span> <span style="color: #031930;">arg2</span> <span style="color: #031930;">arg3</span> <span style="color: #655d5d;">#etc</span>
+</pre>
+<h3><span class="mw-headline" id="Comments">Comments</span></h3>
+<p>Comments are not interpreted; they are for programmers, not computers.
+Comments are indicated with hashes.
+</p>
+<pre><span style="color: #655d5d;">#inline comment</span><br />
+<span style="color: #655d5d;">##</span>
+<span style="color: #655d5d;">Multiple</span>
+<span style="color: #655d5d;">Line</span>
+<span style="color: #655d5d;">Comment</span>
+<span style="color: #655d5d;">##</span>
+</pre>
+<p>When writing a comment, it is better to explain why the code is there, not what it is for.
+</p>
+<h3><span class="mw-headline" id="Blocks">Blocks</span></h3>
+<p>Some commands define blocks of code that group multiple statements together. Here is an example of a data structure with attributes:
+</p>
+<pre><span style="color: #bd5187;">struct</span> <span style="color: #b45a3c;">@foo</span>
+<span style="color: #bd5187;"> int</span> <span style="color: #b45a3c;">@a</span>
+<span style="color: #bd5187;"> string</span> <span style="color: #b45a3c;">@b</span>
+<span style="color: #bd5187;">_struct</span>
+</pre>
+<p>Any command that defines a block has a corresponding block ender, which is the starting command preceded by an underscore. The <code><span style="color: #bd5187;">struct</span></code> block ends with <code><span style="color: #bd5187;">_struct</span></code>. <code><span style="color: #bd5187;">macro</span></code> ends with <code><span style="color: #bd5187;">_macro</span></code> and a <code><span style="color: #bd5187;">func</span></code> can end with <code><span style="color: #bd5187;">_func</span></code> although it is more common to end a function with <code><span style="color: #bd5187;">return</span></code>.
+</p><p>Blocks cannot nest, nesting blocks throws an error.
+</p>
+<h3><span class="mw-headline" id="Argument_Tokens">Argument Tokens</span></h3>
+<p>A command can take a few different tokens as arguments: 
+</p>
+<ul><li>An IDENTIFER identifies something. Its used to create a variable, function, or struct.</li>
+<li>A FUNCTION CALL is a function name preceded by a colon. This call can be passed to a function, returned by a function, or evaluated.</li>
+<li>An VAR is an argument that refers to a cell with the refer operator (<b>&amp;</b>). Any sequence of refer operators followed by an integer is an VAR.</li>
+<li>A VALUE is any token that can be stored in a variable. These can be NUMBERS (longs, ints, floats, doubles, chars); COLLECTIONS (strings buckets, and words); or STRUCTS (a data type defined in source.)</li>
+<li>A BUCKET is a data type that can store values of multiple types. BUCKETS are COMPLEX COLLECTIONS, and so are STRUCTS.</li>
+<li>A STRING is a sequence of printable characters framed by double quotes. Each string is one argument, even if it includes spaces. A STRING is a SIMPLE COLLECTION, because it can only store data of one type, characters.</li>
+<li>LABELS organize source code.</li>
+<li>PATHS point to files.</li>
+<li>WORDS are the untyped argument. Every argument is a WORD.</li></ul>
+<h3><span class="mw-headline" id="Token_Precedence">Token Precedence</span></h3>
+<p>In a statement, tokens take the following order from left to right:
+</p>
+<ul><li>Commands</li>
+<li>Identifiers</li>
+<li>Function Calls</li>
+<li>Variables</li>
+<li>Numbers</li>
+<li>Strings</li>
+<li>Buckets</li>
+<li>Structs</li>
+<li>Labels</li>
+<li>Paths</li></ul>
+<h3><span class="mw-headline" id="Useful_Operators">Useful Operators</span></h3>
+<p>Some operators appear in multiple tables.
+</p>
+<table class="wikitable">
+<caption>Argument Specifiers
+</caption>
+<tbody><tr>
+<th>Operation</th>
+<th>Name</th>
+<th>Desc.
+</th></tr>
+<tr>
+<td><code><span style="color: #a06e3b;">&amp;</span></code></td>
+<td>Refer</td>
+<td>Refers to a variable.
+</td></tr>
+<tr>
+<td><code><span style="color: #bd5187;">:</span></code></td>
+<td>Call Passing</td>
+<td>Call Passing; Passes a function call as an argument.
+</td></tr>
+<tr>
+<td><code><span style="color: #b45a3c;">@</span></code></td>
+<td>Identifying Operator</td>
+<td>For naming data.
+</td></tr>
+<tr>
+<td><code><span style="color: #5485b6;">"</span></code></td>
+<td>Quote</td>
+<td>Frames a String.
+</td></tr>
+<tr>
+<td><code><span style="color: #031930;">(</span></code></td>
+<td>Open Parenthesis</td>
+<td>Starts a parenthetical grouping, which evaluates first.
+</td></tr>
+<tr>
+<td><code><span style="color: #031930;">)</span></code></td>
+<td>Close Parenthesis</td>
+<td>Close Parenthesis; Closes a parenthetical grouping.
+</td></tr>
+<tr>
+<td><code><span style="color: #4b8b8b;">!</span></code></td>
+<td>Bang</td>
+<td>Macro operator.
+</td></tr>
+<tr>
+<td><code><span style="color: #655d5d;">#</span></code></td>
+<td>Hash</td>
+<td>Starts inline comment. Everything to the right is a comment.
+</td></tr>
+<br>
+</tbody></table>
+<br>
+<table class="wikitable">
+<caption>Compiler Operators
+</caption>
+<tbody><tr>
+<th>Operation</th>
+<th>Name</th>
+<th>Desc.
+</th></tr>
+<tr>
+<td><code><span style="color: #031930;">*</span></code></td>
+<td>Star</td>
+<td>Gets the contents of a directory loads files into the linker.
+</td></tr>
+<tr>
+<td><code><span style="color: #031930;">-&gt;</span></code></td>
+<td>Right Arrow</td>
+<td>This is substituted with the path from <i>bbe</i> to the current file.
+</td></tr>
+<tr>
+<td><code><span style="color: #031930;">/</span></code></td>
+<td>Subdirectory Delimiter</td>
+<td>Extends path to a subdirectory.
+</td></tr>
+<tr>
+<td><code><span style="color: #4b8b8b;">!</span></code></td>
+<td>Bang</td>
+<td>Macro operator.
+</td></tr></tbody></table>
+<br>
+<table class="wikitable">
+<caption>Lexical Operators
+</caption>
+<tbody><tr>
+<th>Operation</th>
+<th>Name</th>
+<th>Desc.
+</th></tr>
+<tr>
+<td>\n</td>
+<td>Newline Character (ASCII)</td>
+<td>Terminates a command or inline comment.
+</td></tr>
+<tr>
+<td><code><span style="color: #031930;">;</span></code></td>
+<td>Semicolon</td>
+<td>Explicit newline, equivalent to a newline.
+</td></tr>
+<tr>
+<td><code><span style="color: #5485b6;">\</span></code></td>
+<td>Escape</td>
+<td>Begins an escape sequence, which can represent newlines (\n), and tabs (\t).
+</td></tr>
+<tr>
+<td><code><span style="color: #031930;">.</span></code></td>
+<td>Dot</td>
+<td>Accesses library functions and structure attributes.
+</td></tr>
+<tr>
+<td><code><span style="color: #bd5187;">_</span></code></td>
+<td>Underscore</td>
+<td>When a command begins with this operator, a block of statements ends.
+</td></tr>
+<tr>
+<td><code><span style="color: #655d5d;">#</span></code></td>
+<td>Hash</td>
+<td>Starts inline comment. Everything to the right is a comment.
+</td></tr>
+<tr>
+<td><code><span style="color: #655d5d;">##</span></code></td>
+<td>Double Hash</td>
+<td>Frames multiple line comment.
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Grammar_in_EBNF">Grammar in EBNF</span></h3>
+<pre>Program&#160;:= {(Statement | Func)}
+Func&#160;:= Fi, {Statement}, Re
+Fi&#160;:= 'func', Word, Lt
+Re&#160;:= 'return', {Arg}, Lt
+Statement&#160;:= Command, {Arg}, Lt
+Command&#160;:= Word, Sp
+Arg&#160;:= {(Number | Var | Word | String), Sp}
+Var&#160;:= (And, Word) | (Var '(', Var, ')') | (Var '(', Integer, ')')
+Number&#160;:= any number
+Integer&#160;:= any integer
+Word&#160;:= any set of non-white space characters
+String&#160;:= ' " ', (Word | Sp | Tab), ' " '
+And&#160;:= '&amp;'
+Sp&#160;:= ' '
+Tab&#160;:= a tab character
+Lt&#160;:= a newline char | ';'
+</pre>
+<pre>Key:
+:= assignment, equivalence
+| or
+(group)
+{repeated at least one time}
+[optional]
+'string literal'
+symbol
+, symbol concatenation
+; symbol terminator
+(*comment*)
+</pre>
+<h2><span class="mw-headline" id="Compiling_and_Interpreting">Compiling and Interpreting</span></h2>
+<p>Bunnybell makes use of a compiler and an interpreter to run programs. Compiling happens at compile time. Then interpreting happens at run time.
+All compiled statements are processed outside of a function, like includes, structs, and macros. All interpreted statements are executed inside of a function.
+</p><p><b>The compiler does the following:</b>
+</p>
+<ul><li>Uses a linker to read all included files into memory and concatenates them together for interpretation.</li>
+<li>Processes all macros and performs replacements in memory.</li>
+<li>Analyzes all structs and generates the associated data types for use in interpretation.</li>
+<li>Analyzes all functions, storing labels, and binding calls to their respective functions.</li>
+<li>Parses the source code with lexical and syntactic analysis.</li>
+<li>Throws any relevant errors.</li></ul>
+<p><b>The interpreter does the following:</b>
+</p>
+<ul><li>Executes compiled code starting at the main function.</li>
+<li>Executes commands in order, until the program completes.</li>
+<li>Throws an error if needed, and stops execution.</li>
+<li>Outputs information for debugging.</li></ul>
+<h2><span class="mw-headline" id="Variables">Variables</span></h2>
+<h3><span class="mw-headline" id="Data_Types">Data Types</span></h3>
+<p>Bunnybell stores data with variables. The following types are usable:
+</p>
+<table class="wikitable">
+<caption>Types
+</caption>
+<tbody><tr>
+<th>Type</th>
+<th>Desc.</th>
+<th>Range
+</th></tr>
+<tr>
+<td><code><span style="color: #bd5187;">int</span></code></td>
+<td>A four byte integer.</td>
+<td>-2,147,483,648 to 2,147,483,647
+</td></tr>
+<tr>
+<td><code><span style="color: #bd5187;">float</span></code></td>
+<td>A four byte value with a decimal point.</td>
+<td>3.4E +/- 38 (7 digits)
+</td></tr>
+<tr>
+<td><code><span style="color: #bd5187;">double</span></code></td>
+<td>An eight byte value with a decimal point.</td>
+<td>1.7E +/- 308 (15 digits)
+</td></tr>
+<tr>
+<td><code><span style="color: #bd5187;">long</span></code></td>
+<td>A type of eight bytes.</td>
+<td>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+</td></tr>
+<tr>
+<td><code><span style="color: #bd5187;">char</span></code></td>
+<td>A printable character, of one byte.</td>
+<td>0 to 255
+</td></tr>
+<tr>
+<td><code><span style="color: #bd5187;">string</span></code></td>
+<td>A printable string in quotes.</td>
+<td>none
+</td></tr>
+<tr>
+<td><code><span style="color: #bd5187;">bucket</span></code></td>
+<td>An array or list of items in parentheses. Items can be of any type.</td>
+<td>none
+</td></tr>
+<tr>
+<td><code><span style="color: #bd5187;">path</span></code></td>
+<td>A path to a file.</td>
+<td>none
+</td></tr></tbody></table>
+<p>A programmer can define their own types with structures.
+</p>
+<h3><span id="Declaring_Variables:_The_Refer_Operator_&amp;"></span><span class="mw-headline" id="Declaring_Variables:_The_Refer_Operator_.26">Declaring Variables: The Refer Operator <code><span style="color: #a06e3b;">&amp;</span></code></span></h3>
+<p>Each type is a command. These commands can take a name and a value. The latter of which initializes the variable.
+All variables are named with ampersands. These are called refer operators, or refers.
+</p><p><br />
+Examples:
+</p>
+<pre><span style="color: #655d5d;">#use an identifier to create a var and a refer to refer to the var</span>
+<span style="color: #bd5187;">int</span> <span style="color: #b45a3c;">@i</span> <span style="color: #c38418;">20</span> 
+<span style="color: #bd5187;">string <span style="color: #b45a3c;">@s</span> <span style="color: #5485b6;">"Hello"</span>                   
+</span></pre>
+<pre><span style="color: #655d5d;"># &amp;i is 20</span>
+<span style="color: #655d5d;"># &amp;s is "Hello"</span>
+</pre>
+<p>A variable's type cannot change after declaration, and two variables cannot have the same name. An uninitialized variable is 0 by default.
+</p>
+<h3><span class="mw-headline" id="Assignment">Assignment</span></h3>
+<p>Assignment, or setting a variable to a value, can be accomplished at initialization (shown above) or via the set command. Variables can be assigned values of their own type, but not values of a different type without casting.<br>
+</p>
+<pre><span style="color: #bd5187;">set</span> <span style="color: #c38418;">&amp;i</span> <span style="color: #c38418;">21</span> 
+<span style="color: #655d5d;"># &amp;i is now 21</span></pre>
+<h3><span class="mw-headline" id="Casting">Casting</span></h3>
+<p>Numbers can be cast to other numbers, but collections cannot be cast to other collections.
+</p><p>Suppose a float is declared:
+</p>
+<pre><span style="color: #bd5187;">float</span> <span style="color: #b45a3c;">@f</span> <span style="color: #a06e3b;">0</span> 
+</pre>
+<p>To cast it to an int, let the int command take the variable <code><span style="color: #a06e3b;">&amp;f</span></code>. In this example, an integer is increased by the floor of f:
+</p>
+<pre><span style="color: #bd5187;">int</span> <span style="color: #b45a3c;">@i</span>
+<span style="color: #bd5187;">give</span> <span style="color: #a06e3b;">&amp;i</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:int</span> <span style="color: #a06e3b;">&amp;f</span><span style="color: #031930;">)</span>
+</pre>
+<p><br />
+Casting with collections gives an unexpected type error.
+</p>
+<h2><span id="Buckets,_Indexing,_and_Nesting"></span><span class="mw-headline" id="Buckets.2C_Indexing.2C_and_Nesting">Buckets, Indexing, and Nesting</span></h2>
+<p>Buckets are divided into items. Each item in a bucket has an index. The leftmost index is 0. Each index refers to a variable in the bucket.
+</p>
+<pre><span style="color: #bd5187;">bucket</span> <span style="color: #a06e3b;">&amp;b</span> (<span style="color: #a06e3b;">10</span> <span style="color: #5485b6;">"Hello"</span> <span style="color: #a06e3b;">6.28</span>)
+<span style="color: #655d5d;"># &amp;b(0) is 10, &amp;b(1) is "Hello"</span> 
+</pre>
+<p>Buckets can contain other buckets to arbitrary depth. Indexes can also be nested to arbitrary depth.
+</p>
+<pre><span style="color: #bd5187;">bucket</span> <span style="color: #a06e3b;">&amp;b</span> (<span style="color: #a06e3b;">10</span> (<span style="color: #a06e3b;">23</span> <span style="color: #a06e3b;">32</span>) <span style="color: #a06e3b;">34</span>) <span style="color: #655d5d;"># &amp;b(1(1)) is 32</span> 
+</pre>
+<p>Syntactically, indexes are variables and should be interpreted as such.
+</p>
+<h2><span class="mw-headline" id="Strings_and_Escapes">Strings and Escapes</span></h2>
+<p>Strings are interpreted literally, as text. A string in framed by quotes and can include white space. A string is always one argument, even one with spaces in it.
+</p><p>For example, consider this line.
+</p>
+<pre><span style="color: #bd5187;">out</span> <span style="color: #5485b6;">"Hello World &amp;s" </span>
+</pre>
+<p>It outputs <code>Hello World &amp;s</code> to the console. The entire string, including spaces, is one argument, output by the command.
+</p>
+<h3><span class="mw-headline" id="Escape_Sequences">Escape Sequences</span></h3>
+<p>These are character codes for representing specific characters inside a string, indicated by a backslash and a letter.
+</p>
+<table class="wikitable">
+<caption>Escapes
+</caption>
+<tbody><tr>
+<th>Escape</th>
+<th>Desc.
+</th></tr>
+<tr>
+<td><code><span style="color: #5485b6;">\n</span></code></td>
+<td>Newline
+</td></tr>
+<tr>
+<td><code><span style="color: #5485b6;">\r</span></code></td>
+<td>Carriage return
+</td></tr>
+<tr>
+<td><code><span style="color: #5485b6;">\t</span></code></td>
+<td>Tab
+</td></tr>
+<tr>
+<td><code><span style="color: #5485b6;">\"</span></code></td>
+<td>Quote
+</td></tr>
+<tr>
+<td><code><span style="color: #5485b6;">\#</span></code></td>
+<td>Hash
+</td></tr>
+<tr>
+<td><code><span style="color: #5485b6;">\\</span></code></td>
+<td>Backslash
+</td></tr></tbody></table>
+<p>Example:
+</p>
+<pre><span style="color: #bd5187;">out</span> <span style="color: #5485b6;">"Hello\nWorld" </span>
+</pre>
+<p>Output:
+</p>
+<pre>Hello
+World
+</pre>
+<h3><span class="mw-headline" id="Character_Access">Character Access</span></h3>
+<p>String characters can be accessed via the indexing syntax 
+</p><p>This example prints the first character of a string:
+</p>
+<pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@main</span>
+ <span style="color: #bd5187;">string</span> <span style="color: #b45a3c;">@s</span> <span style="color: #5485b6;">"dog"</span>
+ <span style="color: #bd5187;">out</span> <span style="color: #a06e3b;">&amp;s</span><span style="color: #031930;">(</span><span style="color: #a06e3b;">0</span><span style="color: #031930;">)</span><span style="color: #655d5d;"> #outputs d</span>
+<span style="color: #bd5187;">return</span>
+</pre>
+<h2><span id="Identifiers:_How_to_Use_the_Identifying_Operator_@"></span><span class="mw-headline" id="Identifiers:_How_to_Use_the_Identifying_Operator_.40">Identifiers: How to Use the Identifying Operator <code> <span style="color: #b45a3c;">@</span></code></span></h2>
+<p>These are used when naming a construct, like a function, label, variable, or struct. This practices enforces readability and prevents abuses of syntax. In earlier versions, untyped words were used for naming, but this was problematic.
+</p><p>Identifying a variable:
+</p>
+<pre><span style="color: #bd5187;">int</span> <span style="color: #b45a3c;">@i</span> <span style="color: #a06e3b;">10</span>
+</pre>
+<p>Identifying a function:
+</p>
+<pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@foo</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:int</span> <span style="color: #b45a3c;">@a</span><span style="color: #031930;">)</span> <span style="color: #655d5d;">#a is an integer.</span>
+</pre>
+<p>Identifying a struct:
+</p>
+<pre><span style="color: #bd5187;">struct</span> <span style="color: #b45a3c;">@tree</span>
+</pre>
+<p>Identifying a label:
+</p>
+<pre><span style="color: #bd5187;">label</span> <span style="color: #b45a3c;">@foo</span>
+</pre>
+<p>The identifying operator (<code><span style="color: #b45a3c;">@</span></code>) is not part of a name, it indicates a name.
+</p>
+<h2><span class="mw-headline" id="Labels_and_Conditionals">Labels and Conditionals</span></h2>
+<p>Goto statements change the control flow of a program by moving the program counter from one line to another. In a program with no goto statements or calls, lines are executed from the first to the last in order, top to bottom. These programs cannot perform logic, parse input, or make decisions. The program counter needs to be able to jump in order for computation to be possible.
+</p><p>Goto statements make the program counter jump. Labels are locations to which the program counter jumps. In combination, they can evaluate conditions and execute loops. Finally, note that labels are stored at compile-time, so a goto can accept a label that is declared on a later line.
+</p>
+<h3><span class="mw-headline" id="Conditionals_and_Loops">Conditionals and Loops</span></h3>
+<p>A conditional is a statement that can be true or false if a condition is met. When a conditional is true, the program counter goes to the label specified. Otherwise, the program counter increments to the next statement.
+</p><p>Loops begin with a label and end with a goto. They can run until a condition is met, or they can run forever.
+Count-controlled loops increment a number until it is of a specific value.
+Sentinel-controlled loops run until a condition is met.
+</p>
+<h3><span class="mw-headline" id="Commands_and_Examples">Commands and Examples</span></h3>
+<ul><li>See the "Conditionals and Loops" section of Commands for information on commands that go to labels.</li>
+<li>For an example of conditionals with an infinite, sentinel-controlled loop, see Truth Machine in Program Examples.</li>
+<li>For an example of conditionals with a count-controlled loop, see FizzBuzz in Program Examples.</li></ul>
+<h2><span class="mw-headline" id="Functions">Functions</span></h2>
+<p>All memory in this language is bound to functions (or subroutines, if you prefer that term). 
+Calls to functions are stored in the function tree. The main call is the root of this tree, and it branches each time a call is made.
+</p>
+<h3><span class="mw-headline" id="The_Basics:_Functions_and_Calls">The Basics: Functions and Calls</span></h3>
+<p>Functions let a programmer define their own commands as subprograms, and they can be called to perform a task. A function call executes the sub program defined by a function. Calls cannot run include statements, but they can take input, store information in memory, and output to calling (parent) function calls. After processing include statements, all BunnyBell programs call the main function implicitly. Every function called from the main function is a child of the main function call.
+</p><p>The ‘func’ command starts a function definition. It takes a function name and input arguments for the function. Functions end with a ‘return’ command, which can output to the parent call.
+</p><p>When a function is called execution stops for the parent call, and resumes when the child call completes execution. The program ends when the main call completes or when a halt command executes.
+</p>
+<h3><span class="mw-headline" id="Specifying_Function_Input_Types">Specifying Function Input Types</span></h3>
+<p>Sometimes a programmer needs to specify what type of arguments their function can take: 
+</p>
+<table class="wikitable">
+<caption>Typings
+</caption>
+<tbody><tr>
+<th>Example</th>
+<th>Desc.
+</th></tr>
+<tr>
+<td><code><span style="color: #b45a3c;">@foo</span></code></td>
+<td>foo is an identifier. Many commands take these.
+</td></tr>
+<tr>
+<td><code><span style="color: #bd5187;">:foo</span></code></td>
+<td>foo is a call.
+</td></tr>
+<tr>
+<td><code><span style="color: #031930;">(</span><span style="color: #bd5187;">:t</span> <span style="color: #b45a3c;">@foo</span><span style="color: #031930;">)</span></code></td>
+<td>foo is a value the type specified; t is generic for an int, float, double, long, char, string, bucket, path, or struct.
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Using_Function_Calls_as_Arguments:_The_Call_Passing_Operator_:">Using Function Calls as Arguments: The Call Passing Operator <code><span style="color: #bd5187;">:</span></code></span></h3>
+<p>Function calls are first class in this language. They can be assigned to a cell, passed to a function, or returned from a function.
+</p>
+<pre><span style="color: #bd5187;">foo :bar</span> <span style="color: #655d5d;">#passes what bar returns to foo.</span>
+<span style="color: #bd5187;">foo</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:bar</span> <span style="color: #b45a3c;">@i</span> <span style="color: #a06e3b;">10 20</span><span style="color: #031930;">)</span> <span style="color: #655d5d;">#bar can take arguments.</span>
+</pre>
+<h3><span class="mw-headline" id="Overloading">Overloading</span></h3>
+<p>A function is said to be overloaded when two function definitions share the same name.
+</p>
+<pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@foo</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:string</span> <span style="color: #b45a3c;">@a</span><span style="color: #031930;">)</span>
+ <span style="color: #bd5187;">out</span> <span style="color: #a06e3b;">&amp;a</span>
+ <span style="color: #bd5187;">return</span>
+</pre>
+<pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@foo</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:int</span> <span style="color: #b45a3c;">@a</span><span style="color: #031930;">)</span>
+ <span style="color: #bd5187;">give</span> <span style="color: #a06e3b;">&amp;a</span> <span style="color: #a06e3b;">1</span>
+ <span style="color: #bd5187;">out</span> <span style="color: #a06e3b;">&amp;a</span>
+ <span style="color: #bd5187;">return</span>
+</pre>
+<p>The function foo can output a string, or increment an integer by one and output. Overloaded functions can differ by the number of arguments they take and the types of arguments they take. However functions cannot share name, number of arguments, and types of arguments. Here is an example of what not to do.
+</p>
+<pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@foo</span>
+ <span style="color: #bd5187;">out</span> <span style="color: #5485b6;">"Hi"</span>
+ <span style="color: #bd5187;">return</span>
+</pre>
+<pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@foo</span>
+ <span style="color: #bd5187;">out</span> <span style="color: #5485b6;">"Bye"</span>
+ <span style="color: #bd5187;">return</span>
+</pre>
+<p>This overloaded function is ambiguous and produces a collision. If foo were called, the output of that call is indeterminate. The two definitions of foo collide.
+</p>
+<h3><span class="mw-headline" id="Returning">Returning</span></h3>
+<p>A return outputs from a function call to its parent. In the case where a call is an argument of a call or command, the argument is evaluated first. Let <code><span style="color: #a06e3b;">&amp;d</span></code> be 2 in this example.
+</p>
+<pre><span style="color: #bd5187;">bneq</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:Math</span>.<span style="color: #bd5187;">add</span> <span style="color: #a06e3b;">3</span> <span style="color: #a06e3b;">&amp;d</span><span style="color: #031930;">)</span> <span style="color: #a06e3b;">0</span> <span style="color: #655d5d;"># -&gt; bneq 5 0</span>
+</pre>
+<p>The arrow is not an operation, it demonstrates evaluation.
+</p>
+<h2><span class="mw-headline" id="Structs:_Defining_a_Data_Type">Structs: Defining a Data Type</span></h2>
+<p>Structures are data structures defined in source.
+</p>
+<pre><span style="color: #bd5187;">struct</span> <span style="color: #b45a3c;">@thing</span>
+ <span style="color: #bd5187;">int</span> <span style="color: #b45a3c;">@i</span>
+ <span style="color: #bd5187;">int</span> <span style="color: #b45a3c;">@j</span>
+ <span style="color: #bd5187;">int</span> <span style="color: #b45a3c;">@k</span>
+<span style="color: #bd5187;">_struct</span>
+</pre>
+<p><br />
+Variables in structures, called attributes, are not initialized. They are accessed and modified by functions, such as in the example here:
+</p>
+<pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@main</span>
+ <span style="color: #bd5187;">thing</span> <span style="color: #b45a3c;">@s</span>
+ <span style="color: #bd5187;">set</span> <span style="color: #a06e3b;">&amp;s</span><span style="color: #031930;">.</span><span style="color: #a06e3b;">k</span>
+ <span style="color: #bd5187;">out</span> <span style="color: #a06e3b;">&amp;s</span><span style="color: #031930;">.</span><span style="color: #a06e3b;">k</span>
+<span style="color: #bd5187;">return</span>
+<span style="color: #655d5d;">#outputs 10</span>
+</pre>
+<p><br />
+Structures can have attributes of their own type. This is useful for defining data structures.
+This example defines a binary tree.
+</p>
+<pre><span style="color: #bd5187;">struct</span> <span style="color: #b45a3c;">@binary_tree</span>
+ <span style="color: #bd5187;">node</span> <span style="color: #b45a3c;">@root</span>
+<span style="color: #bd5187;">_struct</span>
+ 
+<span style="color: #655d5d;">#node</span>
+<span style="color: #bd5187;">struct</span> <span style="color: #b45a3c;">@node</span>
+ <span style="color: #bd5187;">int</span> <span style="color: #b45a3c;">@data</span>
+ <span style="color: #bd5187;">node</span> <span style="color: #b45a3c;">@left</span>   <span style="color: #655d5d;">#child one</span>
+ <span style="color: #bd5187;">node</span> <span style="color: #b45a3c;">@right</span>  <span style="color: #655d5d;">#child two</span> 
+<span style="color: #bd5187;">_struct</span>
+</pre>
+<p>Structures cannot be defined within a function. They also cannot nest.
+</p>
+<h2><span class="mw-headline" id="Macros">Macros</span></h2>
+<p>Macros are substitutions performed by the compiler before runtime.
+</p>
+<h3><span class="mw-headline" id="Use_with_Constants">Use with Constants</span></h3>
+<p>Consider this example with no macros:
+</p>
+<pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@main</span>
+ <span style="color: #bd5187;">bucket</span> <span style="color: #b45a3c;">@b</span> <span style="color: #031930;">(</span><span style="color: #a06e3b;">9</span> <span style="color: #a06e3b;">8</span> <span style="color: #a06e3b;">7</span><span style="color: #031930;">)</span> 
+ <span style="color: #bd5187;">give</span> <span style="color: #a06e3b;">&amp;b</span><span style="color: #031930;">(</span><span style="color: #a06e3b;">0</span><span style="color: #031930;">)</span> <span style="color: #a06e3b;">10</span>
+ <span style="color: #bd5187;">give</span> <span style="color: #a06e3b;">&amp;b</span><span style="color: #031930;">(</span><span style="color: #a06e3b;">1</span><span style="color: #031930;">)</span> <span style="color: #a06e3b;">10</span> 
+ <span style="color: #bd5187;">give</span> <span style="color: #a06e3b;">&amp;b</span><span style="color: #031930;">(</span><span style="color: #a06e3b;">2</span><span style="color: #031930;">)</span> <span style="color: #a06e3b;">10</span> 
+<span style="color: #bd5187;">return</span>
+</pre>
+<p><br />
+To swap 10 for 11, three lines need to be changed.
+</p><p>Now consider this example with macros:
+</p>
+<pre><span style="color: #bd5187;">macro</span> <span style="color: #4b8b8b;">!foo</span> <span style="color: #a06e3b;">11</span>
+<span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@main</span>
+ <span style="color: #bd5187;">bucket</span> <span style="color: #b45a3c;">@b</span> <span style="color: #031930;">(</span><span style="color: #a06e3b;">9</span> <span style="color: #a06e3b;">8</span> <span style="color: #a06e3b;">7</span><span style="color: #031930;">)</span> 
+ <span style="color: #bd5187;">give</span> <span style="color: #a06e3b;">&amp;b</span><span style="color: #031930;">(</span><span style="color: #a06e3b;">0</span><span style="color: #031930;">)</span> <span style="color: #4b8b8b;">!foo</span>
+ <span style="color: #bd5187;">give</span> <span style="color: #a06e3b;">&amp;b</span><span style="color: #031930;">(</span><span style="color: #a06e3b;">1</span><span style="color: #031930;">)</span> <span style="color: #4b8b8b;">!foo</span> 
+ <span style="color: #bd5187;">give</span> <span style="color: #a06e3b;">&amp;b</span><span style="color: #031930;">(</span><span style="color: #a06e3b;">2</span><span style="color: #031930;">)</span> <span style="color: #4b8b8b;">!foo</span> 
+<span style="color: #bd5187;">return</span>
+</pre>
+<p>Only one line needs to be changed. Its nicer.
+</p>
+<h3><span class="mw-headline" id="Interfacing_Macros">Interfacing Macros</span></h3>
+<p>These interact with the interpreter’s implementing language to allow for the use of low level features, like getting the system clock time.
+</p>
+<ul><li><code><span style="color: #4b8b8b;">!timeMillis</span></code> gets time in milliseconds (a long)</li>
+<li><code><span style="color: #4b8b8b;">!pi</span></code> gets pi</li>
+<li><code><span style="color: #4b8b8b;">!e</span></code> gets e</li>
+<li><code><span style="color: #4b8b8b;">!maxInt</span></code> gets maximum integer value</li>
+<li><code><span style="color: #4b8b8b;">!minInt</span></code> gets minimum integer value</li>
+<li><code><span style="color: #4b8b8b;">!maxLong</span></code> gets maximum long value</li>
+<li><code><span style="color: #4b8b8b;">!minLong</span></code> gets minimum long value</li>
+<li><code><span style="color: #4b8b8b;">!maxFloat</span></code> gets maximum float value</li>
+<li><code><span style="color: #4b8b8b;">!minFloat</span></code> gets minimum float value</li>
+<li><code><span style="color: #4b8b8b;">!maxDouble</span></code> gets maximum double value</li>
+<li><code><span style="color: #4b8b8b;">!minDouble</span></code> gets minimum double value</li></ul>
+<h2><span class="mw-headline" id="Files">Files</span></h2>
+<p>See the Command subsection on File Management. Also see the subsection on Input and Output.
+</p>
+<h2><span class="mw-headline" id="Errors">Errors</span></h2>
+<h3><span class="mw-headline" id="Error_Codes">Error Codes</span></h3>
+<pre>Error&#160;:::::::::::::::::::::::::::::::::::: (0)
+Syntax Error [Command Doc] [Int Range]&#160;::: (1)
+File Not Found&#160;::::::::::::::::::::::::::: (2)
+End Of File&#160;:::::::::::::::::::::::::::::: (3)
+Undefined Variable&#160;::::::::::::::::::::::: (5)
+Undefined Function&#160;::::::::::::::::::::::: (4)
+Undefined Label&#160;:::::::::::::::::::::::::: (5)
+Conflicting Identifiers&#160;:::::::::::::::::: (6)
+Conflicting Function Definitions&#160;::::::::: (7)   
+Conflicting Labels&#160;::::::::::::::::::::::: (8)
+Unexpected Argument Type&#160;::::::::::::::::: (9)
+More Arguments Expected&#160;::::::::::::::::: (10)
+Missing Main Function&#160;::::::::::::::::::: (11)
+Unmatched Parenthesis&#160;::::::::::::::::::: (12)
+Compiler Error; Check Statements&#160;:::::::: (13)
+Cannot Compile in Function&#160;:::::::::::::: (14) 
+Undefined Macro&#160;::::::::::::::::::::::::: (15) 
+Runtime Error&#160;::::::::::::::::::::::::::: (16)
+Stack Overflow&#160;:::::::::::::::::::::::::: (17)
+Out of Memory&#160;::::::::::::::::::::::::::: (18)
+Bad Argument&#160;:::::::::::::::::::::::::::: (19)
+Cannot Modify Constant&#160;:::::::::::::::::: (20)
+Cannot Nest Blocks&#160;:::::::::::::::::::::: (21)
+</pre>
+<p>Whenever possible, an error should describe the function and instruction at which it occurred.
+A trace of calls  should be printed whenever an error is thrown; each call should list all of its arguments on one line if applicable.
+</p><p>Whenever it is applicable, a doc string should be printed describing the syntax of the erroneous command. If this command is defined by the user, the function source will be printed
+</p>
+<h3><span class="mw-headline" id="Example_of_Call_Trace">Example of Call Trace</span></h3>
+<pre>foo 213
+bar
+main
+</pre>
+<h3><span class="mw-headline" id="Example_of_Command_Doc_String">Example of Command Doc String</span></h3>
+<pre>bell 
+     Don’t you know? A bell goes ding! 
+     It makes sound!
+     Args: [HERTZ, [DURATION IN MILLIS
+</pre>
+<h3><span class="mw-headline" id="Example_of_Function_Print">Example of Function Print</span></h3>
+<pre>func cat
+   out "Feed the cat\n"
+   out (:input 2)
+return
+</pre>
+<h3><span id="Throwing,_Catching,_and_Handling_Errors"></span><span class="mw-headline" id="Throwing.2C_Catching.2C_and_Handling_Errors">Throwing, Catching, and Handling Errors</span></h3>
+<p>Errors can be caught and handled inside handle blocks. A handle block catches an error and executes a goto statement. Errors can be thrown by passing an error code to the error command. 
+Like all block statements, handles cannot nest. See Commands for an explanation of each command described here.
+</p>
+<h2><span class="mw-headline" id="Commands">Commands</span></h2>
+<p>(Note that arguments listed in [brackets] are optional)
+</p>
+<h3><span class="mw-headline" id="Functions_2">Functions</span></h3>
+<pre>func
+     defines a function with or without arguments
+     Args: IDENTIFIER, [FUNCTION ARGUMENTS]
+return
+     Ends a function and returns arguments given.
+     If there is nothing to return, 0 is returned.
+     Args: [VALUE]
+_func
+     Equivalent to a return command. 
+     Args: [VALUE]
+doc
+    This command defines a doc string for a function.
+    Doc strings explains what a function does and how it should be used.
+    Args: STRING
+</pre>
+<h3><span class="mw-headline" id="Input_and_Output">Input and Output</span></h3>
+<pre>out
+     This prints the value given. Standard output is default, 
+     but the second argument specifies a file for writing.  
+     The file content is not overwritten. Data is appended.
+     Args: VALUE, [PATH]
+input
+     Takes input of the data type given 
+     (with the exclusion of buckets and structs).
+     Args: STRING
+read
+    Loads file into memory; takes a file path.
+    Args: PATH
+ovwr
+    Overwrite file (arg2), with content (arg1)
+    Args: STRING, PATH
+bell 
+     Don’t you know? A bell goes ding! 
+     It makes sound!
+     Args: [HERTZ, [DURATION IN MILLIS]]
+</pre>
+<h3><span class="mw-headline" id="Conditionals_and_Loops_2">Conditionals and Loops</span></h3>
+<pre>label
+     A label to go to. These are not global, 
+     instead they are defined locally in a function. 
+     Args: IDENTIFIER
+beq
+     Branch to LABEL if args are equal.
+     Args: NUMBER, NUMBER, LABEL  
+bneq 
+     Branch to LABEL if args are not equal.
+     Args: NUMBER, NUMBER, LABEL 
+bgr 
+     Branch to LABEL 
+     if arg1 is greater than arg2.
+     Args: NUMBER, NUMBER, LABEL    
+bleq 
+     Branch to LABEL 
+     if arg1 is less than or equal to arg2.
+     Args: NUMBER, NUMBER, LABEL   
+goto
+     Go to label specified
+     Args: LABEL
+</pre>
+<h3><span class="mw-headline" id="Data">Data</span></h3>
+<pre>var 
+     Initializes a variable of the given type. 
+     Note that var is a genericized placeholder for a data type.
+     Pass it a value to initialize the variable.
+     Args: IDENTIFIER, [VALUE]   
+var
+     To cast, pass a variable.
+     Args: VAR
+set
+     Set variable to value.
+     Args: VAR, VALUE
+const
+     The specified variable is now a constant.
+</pre>
+<h3><span class="mw-headline" id="Numeric_Modifiers">Numeric Modifiers</span></h3>
+<pre>give
+     The first argument is set to the sum of itself and the second argument.
+     Args: VAR, NUMBER
+take
+     The first argument is set to the difference of itself and the second argument.
+     Args: VAR, NUMBER
+</pre>
+<h3><span class="mw-headline" id="Error_Handling">Error Handling</span></h3>
+<pre>handle 
+     Go to the label in any of the listed errors occurs in a handle block.
+     Args: LABEL, ERRCODE OR SET OF ERRCODES 
+_handle
+     Ends the handle block above.
+error 
+     Throws the error given.
+     Args: INTEGER.
+</pre>
+<h3><span class="mw-headline" id="File_Management">File Management</span></h3>
+<p>For File I/O see Input and Output
+</p>
+<pre>make
+    Make a file (0) or directory (1) at the specified path.
+    Args: INTEGER, PATH
+del
+    Delete file or directory (recursively) at path.
+    Args: PATH
+</pre>
+<h3><span id="Program_Interrupters_(Excluding_input)"></span><span class="mw-headline" id="Program_Interrupters_.28Excluding_input.29">Program Interrupters (Excluding input)</span></h3>
+<pre>wait
+     Wait for a number of milliseconds 
+     (1000 if not specified).
+     Args: [TIME TO WAIT IN MILLIS]
+halt   
+     End program.
+</pre>
+<h3><span class="mw-headline" id="Compiled">Compiled</span></h3>
+<pre>struct 
+     Defines a data type as a block of variables.
+     Args: IDENTIFIER
+_struct 
+     Ends a struct.
+include
+     Include contents of specified file.
+     or directory
+     Args: PATH
+macro
+     These are substitutions handled by the linker.
+     Argument one is the macro name
+     which always start with a bang (!).
+     !arg1 is replaced with arg2 at all points in source.
+     Args: MACRO_NAME, REPLACEMENT
+_macro
+     If the second arg of a macro is a semi-colon, the macro can continue over multiple lines. 
+     This command ends the macro.
+</pre>
+<h2><span class="mw-headline" id="Using_the_Interpreter">Using the Interpreter</span></h2>
+<p>The interpreter runs in a shell and takes command line arguments:
+</p>
+<pre>bbe file_to_run.bbe inputs_for_main_func -flag
+</pre>
+<ul><li><code>inputs_for_main_func</code> is a set of arguments for the main function, separated by spaces.</li>
+<li>The <code>-flag</code> sets the interpreter to mute, debug, or both.</li></ul>
+<h3><span class="mw-headline" id="Flagging">Flagging</span></h3>
+<p>The flag can be in four states
+</p>
+<pre>-m  mute the bell
+-d  debugger on
+-dm mute the bell and debugger on
+-md mute the bell and debugger on
+</pre>
+<h3><span class="mw-headline" id="Muting">Muting</span></h3>
+<p>When mute, the bell should not make sound and it should not output text. It is a no-op.
+</p>
+<h3><span class="mw-headline" id="The_Debugger">The Debugger</span></h3>
+<p>Every BunnyBell interpreter should have a debugger that prints the following at each step:
+</p>
+<ul><li>The current function call, with arguments.</li>
+<li>The current instruction in full.</li>
+<li>Value stored at the last variable accessed.</li>
+<li>Any program output at that step.</li></ul>
+<p><b>Example Debug Output:</b>
+</p>
+<pre>Current Function: messages
+Current Instruction: out "Here are your messages."
+Last Variable Modified: &amp;v
+Variable State: 9
+Output:
+Here are your messages.
+</pre>
+<h3><span class="mw-headline" id="Inputs">Inputs</span></h3>
+<p>When a program is waiting for user input it should output a right angle bracket and a space:
+</p>
+<pre>&gt; Lorem Ipsum
+</pre>
+<h2><span class="mw-headline" id="The_Linker:_Include_Commands">The Linker: Include Commands</span></h2>
+<h3><span class="mw-headline" id="How_to_use_Includes">How to use Includes</span></h3>
+<p>The linker formats source code so that it can run appropriately. 
+All leading whitespace before an instruction is removed. 
+Additionally, all include commands are processed. The contents of each 
+included file are compiled for use.  
+</p><p>Note that source files are run from a run directory. Here are examples of include commands:
+</p>
+<pre><span style="color: #bd5187;">include</span> <span style="color: #031930;">run\foo\bar\hello.bbe</span>
+<span style="color: #bd5187;">include</span> <span style="color: #031930;">-&gt;dog\cat\*</span>
+</pre>
+<p>As explained in Useful Operations, the right arrow is substituted with the path from <i>run</i> to the current file, and star includes the entire contents of a directory.
+</p>
+<h3><span class="mw-headline" id="Using_a_Library">Using a Library</span></h3>
+<p>Libraries are directories that contain source files. These should be stored in a directory called <i>lib</i>. This directory should be stored in the same location as <i>run</i>.
+</p><p>Example:
+</p>
+<pre><span style="color: #bd5187;">include</span> <span style="color: #031930;">lib\Math.bbe</span>
+</pre>
+<h3><span class="mw-headline" id="On_Cyclic_File_References">On Cyclic File References</span></h3>
+<p>TL;DR detecting these is an operationally expensive way to do a whole lot of nothing. If a programmer has one of these by mistake, they probably also have an infinite recursion anyway, and they will get a stack trace that alerts them to the bug.
+</p><p>Consider this example:
+</p>
+<ol><li>File A.bbe has the statement <code> include B.bbe</code></li>
+<li>File B.bbe has the statement <code> include A.bbe</code></li></ol>
+<p>These are generally difficult to handle efficiently. While they can be detected by generating a graph of linked files, and checking for a Hamiltonian cycle. This would be done in polynomial time and slow the interpreter down. Even internationally recognized, professionally implemented languages, like C and Python, are often not implemented in ways that explicitly deal with cyclic references. Explicit handling of cyclic include references is, in general, too costly to bother with. 
+</p><p>The more common, and simpler case, is infinite recursions on the call stack. These are easily demonstrated via tracing and printing the call stack in linear time. Such a case is relevant to cyclic file references because files linked in a cycle are likely to make function calls that produce an infinite recursion. Ie, file A calls a function in file B. Then file B calls a function in file A. In general, if there is an unintentional cyclic file reference, it is probably going to be discovered by means of an infinite recursion anyway, so having an explicit way to detect cycling files is not necessary.
+</p>
+<h2><span class="mw-headline" id="Libraries">Libraries</span></h2>
+<p>The following libraries are included in a BunnyBell interpreter.
+</p>
+<h3><span class="mw-headline" id="Math">Math</span></h3>
+<p>This library has functions that operate on two numbers. Each returns an integer.
+</p>
+<pre>Math.add
+   adds stuff
+Math.sub
+   subtracts stuff
+Math.mul
+   multiplies stuff
+Math.div
+   integer division
+Math.mod
+   modulo 
+Math.pow
+   raise arg1 to arg2
+Math.root
+   takes the arg2 root of arg1
+Math.random
+   returns a random value between 0 and 1
+Math.randint 
+   returns a random integer between arg1 and arg2 inclusive.
+Math.floor
+   returns the floor of a float or double as an int.
+Math.ceiling
+   returns the ceiling of a float or double as an int.
+Math.abs
+   returns the absolute value of a number.
+Math.sin
+   returns the sine of a number.
+Math.cos
+   returns the cosine of a number.
+Math.tan
+   returns the tangent of a number.
+</pre>
+<h3><span class="mw-headline" id="Collections">Collections</span></h3>
+<p>Operations on collections.
+</p>
+<pre>Collections.size
+   Get the number of items in a collection.
+   Args: COLLECTION
+   Ret:  INTEGER
+Collections.count
+   Counts the occurrences of a value.
+   Args: COLLECTION, VALUE 
+   Ret:  INTEGER
+Collections.cat
+   Concatenates strings into one string. 
+   Args: STRING, STRING
+   Ret:  STRING
+Collections.cat
+   Concatenates buckets into one bucket. 
+   Args: BUCKET, BUCKET
+   Ret:  BUCKET
+Collections.make_empty_bucket
+   Makes an empty bucket (of null data) of a given size.
+   Args: INTEGER
+   Ret:  BUCKET
+   Err: Bad Argument if Negative integer
+Collections.append 
+   To use with a bucket. The bucket size grows by 1 and the item becomes the last index in the bucket.
+  Args: BUCKET, VALUE
+Collections.remove 
+  Remove the index given from the bucket.
+  Args: BUCKET, VAR
+  Err: If the index is not found, that’s an undefined var.
+Collections.insert
+  Insert item at index of bucket.
+  Args: BUCKET, INDEX, VALUE
+  Err: Not a bucket or index
+</pre>
+<p><br />  
+Note that each function is named according to the convention of <b>library.function</b>.
+</p>
+<pre><span style="color: #655d5d;">#Example</span> 
+<span style="color: #bd5187;">give</span> <span style="color: #a06e3b;">&amp;0</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:Collections</span><span style="color: #031930;">.</span><span style="color: #bd5187;">size</span> <span style="color: #031930;">(</span><span style="color: #a06e3b;">10</span> <span style="color: #a06e3b;">10</span><span style="color: #031930;">))</span>
+</pre>
+<p><br />
+The convention for naming library files is to write the name of the library and bbe. Ie <b>Collections.bbe</b>
+</p>
+<h2><span class="mw-headline" id="Proof_of_Turing_Completeness">Proof of Turing Completeness</span></h2>
+<h3><span class="mw-headline" id="Proof_by_Translation_to_bf">Proof by Translation to bf</span></h3>
+<p>It is trivial to define a function that can simulate a bf interpreter. Bf stores memory as cells on a tape. Cells are modified by a movable pointer, exactly like a Turing machine. A bucket of characters is sufficient to implement the tape.
+</p>
+<pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@bf</span>
+ <span style="color: #bd5187;">bucket</span> <span style="color: #b45a3c;">@tape</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:Collections</span><span style="color: #031930;">.</span><span style="color: #bd5187;">make_empty_bucket</span> <span style="color: #a06e3b;">30000</span><span style="color: #031930;">)</span>
+ <span style="color: #bd5187;">int</span> <span style="color: #b45a3c;">@pointer</span> <span style="color: #a06e3b;">0</span> <span style="color: #655d5d;">#points to a char</span><br /><br /><span style="color: #655d5d;"> ##</span><br /><span style="color: #655d5d;"> translated bf goes here</span>
+<span style="color: #655d5d;"> ##</span><br />
+<span style="color: #bd5187;">return</span>
+</pre>
+<table class="wikitable">
+<caption>Translation Table
+</caption>
+<tbody><tr>
+<th>bf</th>
+<th>BunnyBell
+</th></tr>
+<tr>
+<td><code>&gt;</code></td>
+<td><code><span style="color: #bd5187;">give</span> <span style="color: #a06e3b;">&amp;pointer</span> <span style="color: #a06e3b;">1</span><span style="color: #031930;">;</span></code>
+</td></tr>
+<tr>
+<td><code>&lt;</code></td>
+<td><code><span style="color: #bd5187;">take</span> <span style="color: #a06e3b;">&amp;pointer</span> <span style="color: #a06e3b;">1</span><span style="color: #031930;">;</span> </code>
+</td></tr>
+<tr>
+<td><code>+</code></td>
+<td><code><span style="color: #bd5187;">give</span> <span style="color: #a06e3b;">&amp;tape</span><span style="color: #031930;">(</span><span style="color: #a06e3b;">&amp;pointer</span><span style="color: #031930;">)</span> <span style="color: #a06e3b;">1</span><span style="color: #031930;">;</span> </code>
+</td></tr>
+<tr>
+<td><code>-</code></td>
+<td><code><span style="color: #bd5187;">give</span> <span style="color: #a06e3b;">&amp;tape</span><span style="color: #031930;">(</span><span style="color: #a06e3b;">&amp;pointer</span><span style="color: #031930;">)</span> <span style="color: #a06e3b;">-1</span> <span style="color: #031930;">;</span></code>
+</td></tr>
+<tr>
+<td><code>.</code></td>
+<td><code><span style="color: #bd5187;">out</span> <span style="color: #a06e3b;">&amp;tape</span><span style="color: #031930;">(</span><span style="color: #a06e3b;">&amp;pointer</span><span style="color: #031930;">)</span> <span style="color: #031930;">;</span></code>
+</td></tr>
+<tr>
+<td><code>,</code></td>
+<td><code><span style="color: #bd5187;">input</span> <span style="color: #a06e3b;">&amp;tape</span><span style="color: #031930;">(</span><span style="color: #a06e3b;">&amp;pointer</span><span style="color: #031930;">)</span> <span style="color:#5485b6;">"char"</span><span style="color: #031930;">;</span></code>
+</td></tr>
+<tr>
+<td><code>[</code></td>
+<td><code><span style="color: #bd5187;">beq</span> <span style="color: #a06e3b;">&amp;tape</span><span style="color: #031930;">(</span><span style="color: #a06e3b;">&amp;pointer</span><span style="color: #031930;">)</span> <span style="color: #a06e3b;">0</span> <span style="color: #b45a3c;">@closeBracket</span> <span style="color: #031930;">;</span> <span style="color: #bd5187;">label</span> <span style="color: #b45a3c;">@openBracket</span><span style="color: #031930;">;</span>  </code>
+</td></tr>
+<tr>
+<td><code>]</code></td>
+<td><code><span style="color: #bd5187;">bneq</span> <span style="color: #a06e3b;">&amp;tape</span><span style="color: #031930;">(</span><span style="color: #a06e3b;">&amp;pointer</span><span style="color: #031930;">)</span> <span style="color: #a06e3b;">0</span> <span style="color: #b45a3c;">@openBracket</span> <span style="color: #031930;">;</span> <span style="color: #bd5187;">label</span> <span style="color: #b45a3c;">@closeBracket</span><span style="color: #031930;">;</span></code>
+</td></tr></tbody></table>
+<p>(The semicolon is an explicit newline.)
+</p><p>Given bf is Turing complete, and Bunnybell can simulate a bf interpreter. Bunnybell must also be Turing complete.
+QED
+</p>
+<h2><span class="mw-headline" id="Syntax_Highlighting">Syntax Highlighting</span></h2>
+<p>Syntax highlighting is a practice to improve readability by coloring tokens. Keep in mind that a readable source code is best achieved in a language with appropriate syntax. Readable code does not require highlights at all.
+</p><p>As a general rule of thumb: tokens that require specialized parsers have hue, and tokens are otherwise black or white.
+The color scheme below is not a mandate, but an attempt.
+</p>
+<h3><span class="mw-headline" id="Colors">Colors</span></h3>
+<ul><li>ERRORS range from red to orange; if preferred, black or white is also acceptable.</li>
+<li>IDENTIFIERS range from red to yellow</li>
+<li>VARIABLES and NUMBERS range from yellow to blue</li>
+<li>MACROS range from green to blue</li>
+<li>STRINGS range from blue to purple.</li>
+<li>CALLS and COMMANDS range from purple to pink.</li>
+<li>COMMENTS are grey.</li>
+<li>PARENTHESES, SEMI-COLONS, DOTS, LABELS, and PATHS are black or white.</li>
+<li>BLACK is hex code #031930</li>
+<li>WHITE is hex code #fce6cf</li></ul>
+<p>This scheme should be modified as needed for colorblindness, theme, mode, or whim. Two colorblind adapted palettes are available. 
+Note that a dark reader may interfere with the rendering of palettes.
+Also note that as implied in the palettes, the operators are highlighted according to token color.
+</p>
+<h3><span class="mw-headline" id="General_Palettes">General Palettes</span></h3>
+<p>Lakeside palette: 
+</p>
+<div style="border: 1px solid #ddd;padding:1em;background-color:#f9f9f9;font-family: monospace,Courier;">
+<p><font color="#d22d72">error</font><br />
+<font color="#935c25">@identifier</font><br />
+<font color="#8a8a0f">number</font><br />
+<font color="#8a8a0f">&amp;variable</font><br />
+<font color="#568c3b">!macro</font><br />
+<font color="#2d8f6f">"string"</font><br />
+<font color="#257fad">command</font><br />
+<font color="#257fad">:call</font><br />
+<font color="#516d7b">#comment</font><br />
+<font color="#031930">();.</font><br />
+<font color="#031930">label</font><br />
+<font color="#031930">path</font><br />
+<font color="#031930">error</font><br />
+</p>
+</div>
+<p>Forest palette:
+</p>
+<div style="border: 1px solid #ddd;padding:1em;background-color:#f9f9f9;font-family: monospace,Courier;">
+<p><font color="#f22c40">error</font><br />
+<font color="#df5320">@identifier</font><br />
+<font color="#c38418">number</font><br />
+<font color="#c38418">&amp;variable</font><br />
+<font color="#7b9726">!macro</font><br />
+<font color="#00ad9c">"string"</font><br />
+<font color="#c33ff3">command</font><br />
+<font color="#c33ff3">:call</font><br />
+<font color="#766e6b">#comment</font><br />
+<font color="#031930">();.</font><br />
+<font color="#031930">label</font><br />
+<font color="#031930">path</font><br />
+<font color="#031930">error</font><br />
+</p>
+</div>
+<p>Plateau palette (This is used in documentation for light and dark reading.)
+</p>
+<div style="border: 1px solid #ddd;padding:1em;background-color:#f9f9f9;font-family: monospace,Courier;">
+<p><font color="#ca4949">error</font><br />
+<font color="#b45a3c">@identifier</font><br />
+<font color="#a06e3b">number</font><br />
+<font color="#a06e3b">&amp;variable</font><br />
+<font color="#4b8b8b">!macro</font><br />
+<font color="#5485b6">"string"</font><br />
+<font color="#bd5187">command</font><br />
+<font color="#bd5187">:call</font><br />
+<font color="#655d5d">#comment</font><br />
+<font color="#031930">();.</font><br />
+<font color="#031930">label</font><br />
+<font color="#031930">path</font><br />
+<font color="#031930">error</font><br />
+</p>
+</div>
+<h3><span class="mw-headline" id="Adapted_Palettes">Adapted Palettes</span></h3>
+<p>IBM Design Library:
+</p>
+<div style="border: 1px solid #ddd;padding:1em;background-color:#f9f9f9;font-family: monospace,Courier;">
+<p><font color="#FE6100">error</font><br />
+<font color="#FE6100">@identifier</font><br />
+<font color="#FFB000">number</font><br />
+<font color="#FFB000">&amp;variable</font><br />
+<font color="#648fff">!macro</font><br />
+<font color="#785EF0">"string"</font><br />
+<font color="#DC267F">command</font><br />
+<font color="#DC267F">:call</font><br />
+<font color="#787878">#comment</font><br />
+<font color="#031930">();.</font><br />
+<font color="#031930">label</font><br />
+<font color="#031930">path</font><br />
+<font color="#031930">error</font><br />
+</p>
+</div>
+<p>Wong, Points of View: Color Blindness. Nature Methods:
+</p>
+<div style="border: 1px solid #ddd;padding:1em;background-color:#f9f9f9;font-family: monospace,Courier;">
+<p><font color="#D55E00">error</font><br />
+<font color="#D55E00">@identifier</font><br />
+<font color="#E69F00">number</font><br />
+<font color="#E69F00">&amp;variable</font><br />
+<font color="#009E73">!macro</font><br />
+<font color="#56B4E9">"string"</font><br />
+<font color="#CC79A7">command</font><br />
+<font color="#CC79A7">:call</font><br />
+<font color="#787878">#comment</font><br />
+<font color="#031930">();.</font><br />
+<font color="#031930">label</font><br />
+<font color="#031930">path</font><br />
+<font color="#031930">error</font><br />
+</p>
+</div>
+<h2><span class="mw-headline" id="Test_Cases">Test Cases</span></h2>
+<h3><span class="mw-headline" id="Parser_Tests">Parser Tests</span></h3>
+<ul><li>Test each type of comment.</li>
+<li>Test each interfacing macro</li></ul>
+<h3><span class="mw-headline" id="Command_Tests">Command Tests</span></h3>
+<p>Note that each command should be tested with no arguments, expected arguments, and unexpected arguments.
+</p>
+<h3><span class="mw-headline" id="Error_Tests">Error Tests</span></h3>
+<p>Each error should be tested.
+</p>
+<h3><span class="mw-headline" id="Library_Tests">Library Tests</span></h3>
+<p>Each function in the library described should be tested.
+</p>
+<h3><span class="mw-headline" id="Function_Tests">Function Tests</span></h3>
+<ul><li>One (non-main) function, one call, no arguments. (Simplest Case)</li>
+<li>One (non-main) function, one call, with value arguments.</li>
+<li>One (non-main) function, one call, with variable arguments.</li>
+<li>One (non-main) function, one call, with functions as arguments.</li>
+<li>One (non-main) function, one call, with mixed type arguments.</li>
+<li>One (non-main) function, one call, with unexpected arguments.</li>
+<li>One overloaded (non-main) function, one call, with arguments.</li>
+<li>One overloaded (non-main) function, multiple calls, with arguments.</li>
+<li>One overloaded (non-main) function, multiple calls, with arguments, such that each call runs the same subroutine with different inputs.</li></ul>
+<h3><span class="mw-headline" id="Compiler_Tests">Compiler Tests</span></h3>
+<ul><li>Macro definition test</li>
+<li>Structure definition and use test.</li>
+<li>Include one file in same directory.</li>
+<li>Include one file in another directory.</li>
+<li>Include file in subdirectory.</li>
+<li>Include multiple files from various directories.</li>
+<li>Include entire directory.</li>
+<li>Include files in file to be included (accomplished via the right arrow &gt;).</li>
+<li>Circular include reference.</li></ul>
+<h2><span class="mw-headline" id="Index">Index</span></h2>
+<p>Much of the stuff here is explained in the docs or rigorously defined elsewhere. This is not a textbook and the definitions here are for those interested in getting to the point.
+</p>
+<h3><span class="mw-headline" id="Algorithm">Algorithm</span></h3>
+<p>A procedure to do something or make a decision.
+</p>
+<h3><span class="mw-headline" id="ASCII_Table">ASCII Table</span></h3>
+<p>A table in which textual characters are assigned to a number. It was specifically designed for teleprinters in the 1960s. A teleprinter is essentially a typewriter that can be operated remotely. So, the ASCII table features a lot of specific control signals for operating the recipient's teleprinter. (7 rings a bell, which is fun.) The ASCII table is essentially the ancestor of all text encodings. Unless you are using some kind of esoteric keyboard, the computer you are using supports ASCII (including all of those old teleprinter signals).
+</p>
+<h3><span class="mw-headline" id="Assignment">Assignment</span></h3>
+<p>Sets a variable to a value. If x is assigned 5 , then x is now 5.
+</p>
+<h3><span class="mw-headline" id="Arguments">Arguments</span></h3>
+<p>These are not the emotional kind, or the kind of an interlocutor. They are inputs for a command or function.
+</p>
+<h3><span class="mw-headline" id="Array">Array</span></h3>
+<p>This is an ordered grouping of items. A list of stuff, usually contiguous in memory. Buckets are arrays.
+</p>
+<h3><span class="mw-headline" id="Bell">Bell</span></h3>
+<p>This goes ding or beep. If you find yourself running a program for hours, you can use these to alert you to the program’s status while you are doing laundry. 
+</p><p>If you prefer to run such a program while you sleep, you can mute the bell. Just know that if you ignore the computer for too long, it may crash out of spite, and you will wake up to a friendly error message, and you have to plan your evening around the needs of an old computer, and you will question your life choices.
+</p>
+<h3><span class="mw-headline" id="Bf">Bf</span></h3>
+<p>A polite name for a language created by Urban Müller in 1993. This language is designed to be the simplest language possible, such that it has the smallest complier possible. It runs a Turing machine on a tape of bytes and is proven to be Turing complete.
+</p>
+<h3><span class="mw-headline" id="Bit">Bit</span></h3>
+<p>The fundamental unit of information. A bit can be in one of two states. You can think of it as a lightbulb. A bit can be on or off, 0 or 1, true or false. A contiguous set of bits is a word. A word of 2 bits has four states. 3 bits have 8 states. One more bit increases the number of states to the next power of two.
+</p>
+<h3><span class="mw-headline" id="Bug">Bug</span></h3>
+<p>This is the chaotic code that broke your metaphoric vase. You probably wrote it to do something, but you made a mistake and now it does something else. On the origin of the term, I offer this quote from the biography of Rear Admiral Grace Murray Hopper:
+</p><p>"In 1946, when Hopper was released from active duty, she joined the Harvard Faculty at the Computation Laboratory where she continued her work on the Mark II and Mark III. She traced an error in the Mark II to a moth trapped in a relay, coining the term <i>bug</i>. This bug was carefully removed and taped to the log book. [Needless cruelty!] Stemming from the first bug, today we call errors or glitch's in a program a <i>bug</i>."
+</p><p>One day in 1946 they found a literal bug inside some very large, punch-card monstrosity of a machine. The bug crawled in looking for warmth and a cozy shelter, which is understandable. The bug was a bug, and it could not comprehend the consequences of its actions. It was making the computer do strange things. The computer needed debugging, hence the origin of a new term in the field. Hopefully, the bug was freed from its tape prison to go about its bug life uninterrupted.
+</p>
+<h3><span class="mw-headline" id="Byte">Byte</span></h3>
+<p>8 bits. Range of 0 to 255 (unsigned).
+</p>
+<h3><span class="mw-headline" id="Call">Call</span></h3>
+<p>This runs a function with inputs. These can have parents and children. A parent call calls a child call.
+</p>
+<h3><span class="mw-headline" id="Child">Child</span></h3>
+<p>Opposite of a parent. This call finishes execution within parent scope. 
+</p>
+<h3><span class="mw-headline" id="Command">Command</span></h3>
+<p>This is what you use to tell the computer to do a thing. 
+</p>
+<h3><span class="mw-headline" id="Comment">Comment</span></h3>
+<p>This is for people to read; it clarifies. The interpreter cannot read these. As a rule, it is better to explain why the code is written, not what it does, when writing a comment.
+</p>
+<h3><span class="mw-headline" id="Compiler">Compiler</span></h3>
+<p>In computation, a compiler is a program that reads source code and converts it into a form that can be interpreted.
+</p>
+<h3><span class="mw-headline" id="Console">Console</span></h3>
+<p>This run programs, takes input, and displays output.
+</p>
+<h3><span class="mw-headline" id="Constant">Constant</span></h3>
+<p>Data that cannot change state over time.
+</p>
+<h3><span class="mw-headline" id="Directory">Directory</span></h3>
+<p>A folder. It stores files.
+</p>
+<h3><span class="mw-headline" id="EBNF">EBNF</span></h3>
+<p>This is Extended Bakus-Naur Form. It is a meta-syntax that describes the syntax of programming languages.
+</p>
+<h3><span class="mw-headline" id="Error">Error</span></h3>
+<p>Errors are the seatbelt that keeps your computer safe. In this analogy, your program is a car and your computer is the driver. Errors protect your computer when your program does something that is unexpected. Errors are distinguished by error codes.
+</p>
+<h3><span class="mw-headline" id="Esolang">Esolang</span></h3>
+<p>An esolang is an esoteric programming language. These are usually designed by hobbyists to experiment with concepts in programming and computation. BunnyBell is the least esoteric programming language in the history of the esolangs wiki, and it is documented there out of convenience. It that upsets you, perhaps you should consider if being upset over such trivial things is contributing positively to your life.
+</p>
+<h3><span class="mw-headline" id="File">File</span></h3>
+<p>A happy little home for data.
+</p>
+<h3><span class="mw-headline" id="First_Class">First Class</span></h3>
+<p>Something is considered first class when it has the following properties:
+</p>
+<ul><li>It can be assigned or stored in program memory (RAM).</li>
+<li>It can be passed to a function.</li>
+<li>It can be returned from a function.</li></ul>
+<p>If these three criteria are not satisfied, the construct is second-class.
+</p>
+<h3><span class="mw-headline" id="Function">Function</span></h3>
+<p>A program that is run by another program. A subprogram. Takes input and returns output.
+The function is defined as source code.
+</p>
+<h3><span class="mw-headline" id="Heap">Heap</span></h3>
+<p>This is a data structure that behaves like a large pile of legos. You can use the legos to build houses and spaceships and whatever else you like. (Just make sure they go back in the box when you are done.) In this language, the legos are variables, and the return command cleans everything up.
+</p>
+<h3><span class="mw-headline" id="Input">Input</span></h3>
+<p>Data to be processed by a program.
+</p>
+<h3><span class="mw-headline" id="Interpreter">Interpreter</span></h3>
+<p>Interprets and executes source code line by line.
+</p>
+<h3><span class="mw-headline" id="Library">Library</span></h3>
+<p>A library is a set of files that contain useful functions for programmers.
+</p>
+<h3><span class="mw-headline" id="Nesting">Nesting</span></h3>
+<p>Putting a thing inside another thing. It has nothing to do with the 2011 movie <i>Inception</i>.
+</p>
+<h3><span class="mw-headline" id="Output">Output</span></h3>
+<p>Data generated by a program.
+</p>
+<h3><span class="mw-headline" id="Overloading_2">Overloading</span></h3>
+<p>A function is said to be overloaded when there are two or more function definitions of the same name, but differing arguments. The number of arguments may be different, their typing may be different, or the number and typing of the arguments may vary between definitions.
+</p>
+<h3><span class="mw-headline" id="Parent">Parent</span></h3>
+<p>Calls the current call, when the current call is finished execution returns to the parent.
+</p>
+<h3><span class="mw-headline" id="Program">Program</span></h3>
+<p>A to-do list for a computer. Completing the list is called running or execution.
+</p>
+<h3><span class="mw-headline" id="Program_Counter">Program Counter</span></h3>
+<p>This keeps track of what to do next. It will keep incrementing after each statement, until the program ends.
+</p>
+<h3><span class="mw-headline" id="Source_Code">Source Code</span></h3>
+<p>This is what programs are written in.
+</p>
+<h3><span class="mw-headline" id="Stack">Stack</span></h3>
+<p>Think of a stack of pancakes, which is what I call the yummy, pan-fried, tasties, though you might call them flapjacks or hot cakes. Pancakes get on the stack from the top, and the ones at the bottom get eaten last.
+</p><p>Sadly, function calls are not pancakes, the last call on the stack creates the next call to go on the stack.
+</p>
+<h3><span class="mw-headline" id="Stack_Overflow">Stack Overflow</span></h3>
+<p>Have you ever tried to make an endless stack of pancakes? You use up all the batter and the stack topples over.
+This error is thrown before toppling happens. It stops someone from creating a stack with an irresponsible amount of pancakes.
+</p>
+<h3><span class="mw-headline" id="Syntax_2">Syntax</span></h3>
+<p>This tells you how to read and write stuff in a language.
+</p>
+<h3><span class="mw-headline" id="Token">Token</span></h3>
+<p>A token is the shortest portion of source an interpreter can understand.
+</p>
+<h3><span class="mw-headline" id="Turing_Complete">Turing Complete</span></h3>
+<p>Something that is Turing complete is capable of doing any solvable math problem or deciding any decidable problem. It can run any algorithm that is runnable. Anything Turing complete can simulate anything else that is Turing complete.
+</p>
+<h3><span class="mw-headline" id="Turing_Machine">Turing Machine</span></h3>
+<p>A theoretical device that can be programmed to read and write on an endless tape. The tape is divided into cells that can store one bit.  The machine is capable of solving any solvable problem and is foundational in computing. It was invented by Alan Turing.
+</p>
+<h3><span class="mw-headline" id="Variable">Variable</span></h3>
+<p>Data that can change state over time.
+</p>
+<h2><span class="mw-headline" id="ASCII_Table_2">ASCII Table</span></h2>
+<p><i>On mobile phones, many binary values listed here will be interpreted as phone numbers. This gives them a blue, clickable link.</i>
+</p>
+<table class="wikitable sortable">
+
+<tbody><tr>
+<th>Binary</th>
+<th>Decimal</th>
+<th>Hex</th>
+<th>Character
+</th></tr>
+<tr>
+<td>0000000</td>
+<td>0</td>
+<td>00</td>
+<td><b>NULL</b>
+</td></tr>
+<tr>
+<td>0000001</td>
+<td>1</td>
+<td>01</td>
+<td>Start of Heading
+</td></tr>
+<tr>
+<td>0000010</td>
+<td>2</td>
+<td>02</td>
+<td>Start of Text
+</td></tr>
+<tr>
+<td>0000011</td>
+<td>3</td>
+<td>03</td>
+<td>End of Text
+</td></tr>
+<tr>
+<td>0000100</td>
+<td>4</td>
+<td>04</td>
+<td>End of Transmission
+</td></tr>
+<tr>
+<td>0000101</td>
+<td>5</td>
+<td>05</td>
+<td>Enquiry
+</td></tr>
+<tr>
+<td>0000110</td>
+<td>6</td>
+<td>06</td>
+<td>Acknowledgement
+</td></tr>
+<tr>
+<td>0000111</td>
+<td>7</td>
+<td>07</td>
+<td>Bell
+</td></tr>
+<tr>
+<td>0001000</td>
+<td>8</td>
+<td>08</td>
+<td>Backspace
+</td></tr>
+<tr>
+<td>0001001</td>
+<td>9</td>
+<td>09</td>
+<td>Horizontal Tab
+</td></tr>
+<tr>
+<td>0001010</td>
+<td>10</td>
+<td>0A</td>
+<td><b>New Line</b>
+</td></tr>
+<tr>
+<td>0001011</td>
+<td>11</td>
+<td>0B</td>
+<td>Vertical Tab
+</td></tr>
+<tr>
+<td>0001100</td>
+<td>12</td>
+<td>0C</td>
+<td>Form Feed
+</td></tr>
+<tr>
+<td>0001101</td>
+<td>13</td>
+<td>0D</td>
+<td>Carriage Return
+</td></tr>
+<tr>
+<td>0001110</td>
+<td>14</td>
+<td>0E</td>
+<td>Shift Out
+</td></tr>
+<tr>
+<td>0001111</td>
+<td>15</td>
+<td>0F</td>
+<td>Shift In
+</td></tr>
+<tr>
+<td>0010000</td>
+<td>16</td>
+<td>10</td>
+<td>Data Link Escape
+</td></tr>
+<tr>
+<td>0010001</td>
+<td>17</td>
+<td>11</td>
+<td>Device Control 1
+</td></tr>
+<tr>
+<td>0010010</td>
+<td>18</td>
+<td>12</td>
+<td>Device Control 2
+</td></tr>
+<tr>
+<td>0010011</td>
+<td>19</td>
+<td>13</td>
+<td>Device Control 3
+</td></tr>
+<tr>
+<td>0010100</td>
+<td>20</td>
+<td>14</td>
+<td>Device Control 4
+</td></tr>
+<tr>
+<td>0010101</td>
+<td>21</td>
+<td>15</td>
+<td>Negative Acknowledgement
+</td></tr>
+<tr>
+<td>0010110</td>
+<td>22</td>
+<td>16</td>
+<td>Synchronous Idle
+</td></tr>
+<tr>
+<td>0010111</td>
+<td>23</td>
+<td>17</td>
+<td>End of Transmission Block
+</td></tr>
+<tr>
+<td>0011000</td>
+<td>24</td>
+<td>18</td>
+<td>Cancel
+</td></tr>
+<tr>
+<td>0011001</td>
+<td>25</td>
+<td>19</td>
+<td>End of Medium
+</td></tr>
+<tr>
+<td>0011010</td>
+<td>26</td>
+<td>1A</td>
+<td>Substitute
+</td></tr>
+<tr>
+<td>0011011</td>
+<td>27</td>
+<td>1B</td>
+<td>Escape
+</td></tr>
+<tr>
+<td>0011100</td>
+<td>28</td>
+<td>1C</td>
+<td>File Separator
+</td></tr>
+<tr>
+<td>0011101</td>
+<td>29</td>
+<td>1D</td>
+<td>Group Separator
+</td></tr>
+<tr>
+<td>0011110</td>
+<td>30</td>
+<td>1E</td>
+<td>Record Separator
+</td></tr>
+<tr>
+<td>0011111</td>
+<td>31</td>
+<td>1F</td>
+<td>Unit Separator
+</td></tr>
+<tr>
+<td>00100000</td>
+<td>32</td>
+<td>20</td>
+<td>Space
+</td></tr>
+<tr>
+<td>00100001</td>
+<td>33</td>
+<td>21</td>
+<td>!
+</td></tr>
+<tr>
+<td>00100010</td>
+<td>34</td>
+<td>22</td>
+<td>"
+</td></tr>
+<tr>
+<td>00100011</td>
+<td>35</td>
+<td>23</td>
+<td>#
+</td></tr>
+<tr>
+<td>00100100</td>
+<td>36</td>
+<td>24</td>
+<td>$
+</td></tr>
+<tr>
+<td>00100101</td>
+<td>37</td>
+<td>25</td>
+<td>%
+</td></tr>
+<tr>
+<td>00100110</td>
+<td>38</td>
+<td>26</td>
+<td>&amp;
+</td></tr>
+<tr>
+<td>00100111</td>
+<td>39</td>
+<td>27</td>
+<td>'
+</td></tr>
+<tr>
+<td>00101000</td>
+<td>40</td>
+<td>28</td>
+<td>(
+</td></tr>
+<tr>
+<td>00101001</td>
+<td>41</td>
+<td>29</td>
+<td>)
+</td></tr>
+<tr>
+<td>00101010</td>
+<td>42</td>
+<td>2A</td>
+<td>*
+</td></tr>
+<tr>
+<td>00101011</td>
+<td>43</td>
+<td>2B</td>
+<td>+
+</td></tr>
+<tr>
+<td>00101100</td>
+<td>44</td>
+<td>2C</td>
+<td>,
+</td></tr>
+<tr>
+<td>00101101</td>
+<td>45</td>
+<td>2D</td>
+<td>-
+</td></tr>
+<tr>
+<td>00101110</td>
+<td>46</td>
+<td>2E</td>
+<td>.
+</td></tr>
+<tr>
+<td>00101111</td>
+<td>47</td>
+<td>2F</td>
+<td>/
+</td></tr>
+<tr>
+<td>00110000</td>
+<td>48</td>
+<td>30</td>
+<td>0
+</td></tr>
+<tr>
+<td>00110001</td>
+<td>49</td>
+<td>31</td>
+<td>1
+</td></tr>
+<tr>
+<td>00110010</td>
+<td>50</td>
+<td>32</td>
+<td>2
+</td></tr>
+<tr>
+<td>00110011</td>
+<td>51</td>
+<td>33</td>
+<td>3
+</td></tr>
+<tr>
+<td>00110100</td>
+<td>52</td>
+<td>34</td>
+<td>4
+</td></tr>
+<tr>
+<td>00110101</td>
+<td>53</td>
+<td>35</td>
+<td>5
+</td></tr>
+<tr>
+<td>00110110</td>
+<td>54</td>
+<td>36</td>
+<td>6
+</td></tr>
+<tr>
+<td>00110111</td>
+<td>55</td>
+<td>37</td>
+<td>7
+</td></tr>
+<tr>
+<td>00111000</td>
+<td>56</td>
+<td>38</td>
+<td>8
+</td></tr>
+<tr>
+<td>00111001</td>
+<td>57</td>
+<td>39</td>
+<td>9
+</td></tr>
+<tr>
+<td>00111010</td>
+<td>58</td>
+<td>3A</td>
+<td>:
+</td></tr>
+<tr>
+<td>00111011</td>
+<td>59</td>
+<td>3B</td>
+<td>;
+</td></tr>
+<tr>
+<td>00111100</td>
+<td>60</td>
+<td>3C</td>
+<td>&lt;
+</td></tr>
+<tr>
+<td>00111101</td>
+<td>61</td>
+<td>3D</td>
+<td>=
+</td></tr>
+<tr>
+<td>00111110</td>
+<td>62</td>
+<td>3E</td>
+<td>&gt;
+</td></tr>
+<tr>
+<td>00111111</td>
+<td>63</td>
+<td>3F</td>
+<td>?
+</td></tr>
+<tr>
+<td>01000000</td>
+<td>64</td>
+<td>40</td>
+<td>@
+</td></tr>
+<tr>
+<td>01000001</td>
+<td>65</td>
+<td>41</td>
+<td>A
+</td></tr>
+<tr>
+<td>01000010</td>
+<td>66</td>
+<td>42</td>
+<td>B
+</td></tr>
+<tr>
+<td>01000011</td>
+<td>67</td>
+<td>43</td>
+<td>C
+</td></tr>
+<tr>
+<td>01000100</td>
+<td>68</td>
+<td>44</td>
+<td>D
+</td></tr>
+<tr>
+<td>01000101</td>
+<td>69</td>
+<td>45</td>
+<td>E
+</td></tr>
+<tr>
+<td>01000110</td>
+<td>70</td>
+<td>46</td>
+<td>F
+</td></tr>
+<tr>
+<td>01000111</td>
+<td>71</td>
+<td>47</td>
+<td>G
+</td></tr>
+<tr>
+<td>01001000</td>
+<td>72</td>
+<td>48</td>
+<td>H
+</td></tr>
+<tr>
+<td>01001001</td>
+<td>73</td>
+<td>49</td>
+<td>I
+</td></tr>
+<tr>
+<td>01001010</td>
+<td>74</td>
+<td>4A</td>
+<td>J
+</td></tr>
+<tr>
+<td>01001011</td>
+<td>75</td>
+<td>4B</td>
+<td>K
+</td></tr>
+<tr>
+<td>01001100</td>
+<td>76</td>
+<td>4C</td>
+<td>L
+</td></tr>
+<tr>
+<td>01001101</td>
+<td>77</td>
+<td>4D</td>
+<td>M
+</td></tr>
+<tr>
+<td>01001110</td>
+<td>78</td>
+<td>4E</td>
+<td>N
+</td></tr>
+<tr>
+<td>01001111</td>
+<td>79</td>
+<td>4F</td>
+<td>O
+</td></tr>
+<tr>
+<td>01010000</td>
+<td>80</td>
+<td>50</td>
+<td>P
+</td></tr>
+<tr>
+<td>01010001</td>
+<td>81</td>
+<td>51</td>
+<td>Q
+</td></tr>
+<tr>
+<td>01010010</td>
+<td>82</td>
+<td>52</td>
+<td>R
+</td></tr>
+<tr>
+<td>01010011</td>
+<td>83</td>
+<td>53</td>
+<td>S
+</td></tr>
+<tr>
+<td>01010100</td>
+<td>84</td>
+<td>54</td>
+<td>T
+</td></tr>
+<tr>
+<td>01010101</td>
+<td>85</td>
+<td>55</td>
+<td>U
+</td></tr>
+<tr>
+<td>01010110</td>
+<td>86</td>
+<td>56</td>
+<td>V
+</td></tr>
+<tr>
+<td>01010111</td>
+<td>87</td>
+<td>57</td>
+<td>W
+</td></tr>
+<tr>
+<td>01011000</td>
+<td>88</td>
+<td>58</td>
+<td>X
+</td></tr>
+<tr>
+<td>01011001</td>
+<td>89</td>
+<td>59</td>
+<td>Y
+</td></tr>
+<tr>
+<td>01011010</td>
+<td>90</td>
+<td>5A</td>
+<td>Z
+</td></tr>
+<tr>
+<td>01011011</td>
+<td>91</td>
+<td>5B</td>
+<td>[
+</td></tr>
+<tr>
+<td>01011100</td>
+<td>92</td>
+<td>5C</td>
+<td>\
+</td></tr>
+<tr>
+<td>01011101</td>
+<td>93</td>
+<td>5D</td>
+<td>]
+</td></tr>
+<tr>
+<td>01011110</td>
+<td>94</td>
+<td>5E</td>
+<td>^
+</td></tr>
+<tr>
+<td>01011111</td>
+<td>95</td>
+<td>5F</td>
+<td>_
+</td></tr>
+<tr>
+<td>01100000</td>
+<td>96</td>
+<td>60</td>
+<td>`
+</td></tr>
+<tr>
+<td>01100001</td>
+<td>97</td>
+<td>61</td>
+<td>a
+</td></tr>
+<tr>
+<td>01100010</td>
+<td>98</td>
+<td>62</td>
+<td>b
+</td></tr>
+<tr>
+<td>01100011</td>
+<td>99</td>
+<td>63</td>
+<td>c
+</td></tr>
+<tr>
+<td>01100100</td>
+<td>100</td>
+<td>64</td>
+<td>d
+</td></tr>
+<tr>
+<td>01100101</td>
+<td>101</td>
+<td>65</td>
+<td>e
+</td></tr>
+<tr>
+<td>01100110</td>
+<td>102</td>
+<td>66</td>
+<td>f
+</td></tr>
+<tr>
+<td>01100111</td>
+<td>103</td>
+<td>67</td>
+<td>g
+</td></tr>
+<tr>
+<td>01101000</td>
+<td>104</td>
+<td>68</td>
+<td>h
+</td></tr>
+<tr>
+<td>01101001</td>
+<td>105</td>
+<td>69</td>
+<td>i
+</td></tr>
+<tr>
+<td>01101010</td>
+<td>106</td>
+<td>6A</td>
+<td>j
+</td></tr>
+<tr>
+<td>01101011</td>
+<td>107</td>
+<td>6B</td>
+<td>k
+</td></tr>
+<tr>
+<td>01101100</td>
+<td>108</td>
+<td>6C</td>
+<td>l
+</td></tr>
+<tr>
+<td>01101101</td>
+<td>109</td>
+<td>6D</td>
+<td>m
+</td></tr>
+<tr>
+<td>01101110</td>
+<td>110</td>
+<td>6E</td>
+<td>n
+</td></tr>
+<tr>
+<td>01101111</td>
+<td>111</td>
+<td>6F</td>
+<td>o
+</td></tr>
+<tr>
+<td>01110000</td>
+<td>112</td>
+<td>70</td>
+<td>p
+</td></tr>
+<tr>
+<td>01110001</td>
+<td>113</td>
+<td>71</td>
+<td>q
+</td></tr>
+<tr>
+<td>01110010</td>
+<td>114</td>
+<td>72</td>
+<td>r
+</td></tr>
+<tr>
+<td>01110011</td>
+<td>115</td>
+<td>73</td>
+<td>s
+</td></tr>
+<tr>
+<td>01110100</td>
+<td>116</td>
+<td>74</td>
+<td>t
+</td></tr>
+<tr>
+<td>01110101</td>
+<td>117</td>
+<td>75</td>
+<td>u
+</td></tr>
+<tr>
+<td>01110110</td>
+<td>118</td>
+<td>76</td>
+<td>v
+</td></tr>
+<tr>
+<td>01110111</td>
+<td>119</td>
+<td>77</td>
+<td>w
+</td></tr>
+<tr>
+<td>01111000</td>
+<td>120</td>
+<td>78</td>
+<td>x
+</td></tr>
+<tr>
+<td>01111001</td>
+<td>121</td>
+<td>79</td>
+<td>y
+</td></tr>
+<tr>
+<td>01111010</td>
+<td>122</td>
+<td>7A</td>
+<td>z
+</td></tr>
+<tr>
+<td>01111011</td>
+<td>123</td>
+<td>7B</td>
+<td>{
+</td></tr>
+<tr>
+<td>01111100</td>
+<td>124</td>
+<td>7C</td>
+<td>&#124;
+</td></tr>
+<tr>
+<td>01111101</td>
+<td>125</td>
+<td>7D</td>
+<td>}
+</td></tr>
+<tr>
+<td>01111110</td>
+<td>126</td>
+<td>7E</td>
+<td>~
+</td></tr>
+<tr>
+<td>01111111</td>
+<td>127</td>
+<td>7F</td>
+<td>Delete
+</td></tr></tbody></table>
+<p>Via the esolangs wiki.
+</p>
+<h2><span class="mw-headline" id="Sources">Sources</span></h2>
+<pre>@atelierbram, Syntax Highlighting Color Schemes: Atelier Schemes. (n.d.) Retrieved July 16, 2022 from 
+<a rel="nofollow" class="external free" href="https://atelierbram.github.io/syntax-highlighting/atelier-schemes/">https://atelierbram.github.io/syntax-highlighting/atelier-schemes/</a>
+-
+ASCII table. ASCII Table - ASCII Character Codes, HTML, Octal, Hex,
+Decimal. (n.d.). Retrieved January 16, 2022, 
+from <a rel="nofollow" class="external free" href="https://www.asciitable.com/">https://www.asciitable.com/</a>
+-
+Bf. Esolang. (n.d.). Retrieved January 16, 2022, 
+from <a rel="nofollow" class="external free" href="https://esolangs.org/wiki/Bf">https://esolangs.org/wiki/Bf</a>
+(Swear word removed.)
+-
+BunnyBell. Esolang. (n.d.). Retrieved June 4, 2022, 
+<a rel="nofollow" class="external free" href="https://esolangs.org/wiki/BunnyBell_Documentation">https://esolangs.org/wiki/BunnyBell_Documentation</a>
+-
+Davis, S. A. (n.d.). Rear Admiral Grace Murray Hopper.  Retrieved June 12, 2022, from 
+<a rel="nofollow" class="external free" href="https://ei.cs.vt.edu/~history/Hopper.Danis.html">https://ei.cs.vt.edu/~history/Hopper.Danis.html</a> 
+-
+Encyclopedia Britannica, inc. (n.d.). ASCII. Encyclopedia Britannica. Retrieved June 3, 2022, from 
+<a rel="nofollow" class="external free" href="https://www.britannica.com/topic/ASCII">https://www.britannica.com/topic/ASCII</a>
+-
+Java Data Types. Java data types. (n.d.). Retrieved June 3, 2022, from <a rel="nofollow" class="external free" href="https://www.w3schools.com/java/java_data_types.asp">https://www.w3schools.com/java/java_data_types.asp</a>
+-
+Nichols Davis, Coloring for Colorblindness. (n.d.) 
+Retrieved July 16, 2022 from <a rel="nofollow" class="external free" href="https://davidmathlogic.com/colorblind/#%23D81B60-%231E88E5-%23FFC107-%23004D40">https://davidmathlogic.com/colorblind/#%23D81B60-%231E88E5-%23FFC107-%23004D40</a>
+-
+Truth-machine. Esolang. (n.d.). Retrieved February 2, 2022, 
+from <a rel="nofollow" class="external free" href="https://esolangs.org/wiki/Truth-machine">https://esolangs.org/wiki/Truth-machine</a>
+-
+Wikimedia Foundation. (2021, December 25). Extended backus-naur form. 
+Wikipedia. Retrieved January 17, 2022, 
+from <a rel="nofollow" class="external free" href="https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form#Table_of_Symbols">https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form#Table_of_Symbols</a>
+-
+Wikimedia Foundation. (2022, January 4). Turing completeness. Wikipedia. 
+Retrieved January 16, 2022, 
+from <a rel="nofollow" class="external free" href="https://en.wikipedia.org/wiki/Turing_completeness">https://en.wikipedia.org/wiki/Turing_completeness</a>
+-
+Wikimedia Foundation. (2022, January 14). Turing machine. Wikipedia. 
+Retrieved January 16, 2022, 
+from <a rel="nofollow" class="external free" href="https://en.wikipedia.org/wiki/Turing_machine">https://en.wikipedia.org/wiki/Turing_machine</a>
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20220801220805
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.229 seconds
+Real time usage: 0.229 seconds
+Preprocessor visited node count: 956/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key esolang_wiki:pcache:idhash:15859-0!canonical and timestamp 20220801220807 and revision id 101557. Serialized with JSON.
+ -->
+</body><!-- Cached 20220801220819 -->
+</html>
