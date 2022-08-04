@@ -93,6 +93,7 @@ table, th, td {
 <li class="toclevel-1 tocsection-128"><a href="#ASCII_Table_2"><span class="tocnumber">26</span> <span class="toctext">ASCII Table</span></a></li>
 <li class="toclevel-1 tocsection-129"><a href="#Sources"><span class="tocnumber">27</span> <span class="toctext">Sources</span></a></li>
 </div>
+
 <h2><span class="mw-headline" id="Factors_in_Design">Factors in Design</span></h2>
 <p>Always write the simplest code you can. Never implement a complicated algorithm when a simple one will do.
 </p>
@@ -197,7 +198,7 @@ and the work of youtuber User:Truttle1.
 <h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
 <h3><span class="mw-headline" id="Statements">Statements</span></h3>
 <p>Statements are a single line of code that are interpreted to run a program.
-Each statement starts with a command, which can take arguments.  The arguments for a command can be separated by tabs or spaces.
+Each statement starts with a command, which can take arguments.  The arguments for a command can be separated by tabs or spaces. A command can also have arbitrary spaces and tabs before it.
 </p>
 <pre><span style="color: #bd5187;">command</span> <span style="color: #031930;">arg1</span> <span style="color: #031930;">arg2</span> <span style="color: #031930;">arg3</span> <span style="color: #655d5d;">#etc</span>
 </pre>
@@ -301,9 +302,8 @@ Comments are indicated with hashes.
 <td>Hash</td>
 <td>Starts inline comment. Everything to the right is a comment.
 </td></tr>
-<br>
+
 </tbody></table>
-<br>
 <table class="wikitable">
 <caption>Compiler Operators
 </caption>
@@ -332,7 +332,6 @@ Comments are indicated with hashes.
 <td>Bang</td>
 <td>Macro operator.
 </td></tr></tbody></table>
-<br>
 <table class="wikitable">
 <caption>Lexical Operators
 </caption>
@@ -378,22 +377,31 @@ Comments are indicated with hashes.
 </td></tr>
 </tbody></table>
 <h3><span class="mw-headline" id="Grammar_in_EBNF">Grammar in EBNF</span></h3>
-<pre>Program&#160;:= {(Statement | Func)}
+<pre>Program&#160;:= Header, Body
+Header&#160;:= {Include}, {(Macro | Struct)}
+Body&#160;:= {Func}
+Macro&#160;:= 'macro', Sp, Word, Lt | 'macro', {Statements}, '_macro', Lt
+Struct&#160;:= Stead, {Stine}, '_struct', Lt
 Func&#160;:= Fi, {Statement}, Re
-Fi&#160;:= 'func', Word, Lt
-Re&#160;:= 'return', {Arg}, Lt
+Fi&#160;:= 'func', Identifier, Lt
+Re&#160;:= ('return' | '_func'), {Arg}, Lt
+Stead&#160;:= 'struct' Identifier, Lt
+Stine&#160;:= Command, Identifier, Lt
 Statement&#160;:= Command, {Arg}, Lt
-Command&#160;:= Word, Sp
-Arg&#160;:= {(Number | Var | Word | String), Sp}
-Var&#160;:= (And, Word) | (Var '(', Var, ')') | (Var '(', Integer, ')')
+Command&#160;:= {Sp}, Word, Sp
+Arg&#160;:= {(Number | Var | String | Identifier | Call | Word), Sp}
+Call&#160;:= ':', Word {'.', Word}
+Var&#160;:= (And, Word) | (Var '(', Var, ')') | (Var '(', Integer, ')') | Var, '.', Word
+Identifier&#160;:= '@', Words
 Number&#160;:= any number
 Integer&#160;:= any integer
 Word&#160;:= any set of non-white space characters
 String&#160;:= ' " ', (Word | Sp | Tab), ' " '
 And&#160;:= '&amp;'
-Sp&#160;:= ' '
+Sp&#160;:= ' ', {' '}, Tab
 Tab&#160;:= a tab character
-Lt&#160;:= a newline char | ';'
+Lt&#160;:= a newline char | ';' | '#'
+Comment '#', {Word, Sp} | '##', {Word | Sp | Lt}, '##'
 </pre>
 <pre>Key:
 := assignment, equivalence
@@ -494,10 +502,11 @@ Examples:
 <p>A variable's type cannot change after declaration, and two variables cannot have the same name. An uninitialized variable is 0 by default.
 </p>
 <h3><span class="mw-headline" id="Assignment">Assignment</span></h3>
-<p>Assignment, or setting a variable to a value, can be accomplished at initialization (shown above) or via the set command. Variables can be assigned values of their own type, but not values of a different type without casting.<br>
+<p>Assignment, or setting a variable to a value, can be accomplished at initialization (shown above) or via the set command. Variables can be assigned values of their own type, but not values of a different type without casting.
 </p>
 <pre><span style="color: #bd5187;">set</span> <span style="color: #c38418;">&amp;i</span> <span style="color: #c38418;">21</span> 
-<span style="color: #655d5d;"># &amp;i is now 21</span></pre>
+<span style="color: #655d5d;"># &amp;i is now 21</span>
+</pre>
 <h3><span class="mw-headline" id="Casting">Casting</span></h3>
 <p>Numbers can be cast to other numbers, but collections cannot be cast to other collections.
 </p><p>Suppose a float is declared:
@@ -1308,7 +1317,7 @@ Also note that as implied in the palettes, the operators are highlighted accordi
 <h3><span class="mw-headline" id="ASCII_Table">ASCII Table</span></h3>
 <p>A table in which textual characters are assigned to a number. It was specifically designed for teleprinters in the 1960s. A teleprinter is essentially a typewriter that can be operated remotely. So, the ASCII table features a lot of specific control signals for operating the recipient's teleprinter. (7 rings a bell, which is fun.) The ASCII table is essentially the ancestor of all text encodings. Unless you are using some kind of esoteric keyboard, the computer you are using supports ASCII (including all of those old teleprinter signals).
 </p>
-<h3><span class="mw-headline" id="Assignment">Assignment</span></h3>
+<h3><span class="mw-headline" id="Assignment_2">Assignment</span></h3>
 <p>Sets a variable to a value. If x is assigned 5 , then x is now 5.
 </p>
 <h3><span class="mw-headline" id="Arguments">Arguments</span></h3>
