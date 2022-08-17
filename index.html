@@ -93,7 +93,6 @@ table, th, td {
 <li class="toclevel-1 tocsection-129"><a href="#Sources"><span class="tocnumber">27</span> <span class="toctext">Sources</span></a></li>
 </div>
 
-
 <h2><span class="mw-headline" id="Factors_in_Design">Factors in Design</span></h2>
 <p>Always write the simplest code you can. Never implement a complicated algorithm when a simple one will do.
 </p>
@@ -128,8 +127,8 @@ table, th, td {
 Read, Reiley, and Prasad. I am glad to have my degree in computer science!
 I would also like to thank Bringas, Kravsky, and Lee for their tutelage,
 patience, and inspiration. BunnyBell would not exist without the esolangs wiki
-and the work of youtuber <a href="/wiki/User:Truttle1" title="User:Truttle1">User:Truttle1</a>. 
-</p><p>Thanks to <a href="/wiki/User:Gapples2" title="User:Gapples2">User:Gapples2</a> for their questions, comments, and insights. This language is better for them.
+and the work of youtuber User:Truttle1. 
+</p><p>Thanks to User:Gapples2 for their questions, comments, and insights. This language is better for them.
 </p><p>Of course I should thank my loved ones for their support.
 </p>
 <h2><span id="Design_Goals:_Why_Use_BunnyBell?"></span><span class="mw-headline" id="Design_Goals:_Why_Use_BunnyBell.3F">Design Goals: Why Use BunnyBell?</span></h2>
@@ -140,15 +139,15 @@ and the work of youtuber <a href="/wiki/User:Truttle1" title="User:Truttle1">Use
 <li>Lexemes are descriptive, such that the tokens they represent are clearly indicated.</li>
 <li>Memory is always bound to function calls, which eliminates confusing design patterns while maintaining usability.</li></ul>
 <h2><span class="mw-headline" id="Program_Examples">Program Examples</span></h2>
-<h3><span class="mw-headline" id="Hello_World"><a href="/wiki/Hello_World" class="mw-redirect" title="Hello World">Hello World</a></span></h3>
+<h3><span class="mw-headline" id="Hello_World">Hello World</span></h3>
 <p>Outputs “Hello World” to the console.
 </p>
 <pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@main</span>
 &#160;<span style="color: #bd5187;">out</span> <span style="color: #5485b6;">"Hello World" </span>
 &#160;<span style="color: #bd5187;">return </span>
 </pre>
-<h3><span class="mw-headline" id="Truth_Machine"><a href="/wiki/Truth_Machine" class="mw-redirect" title="Truth Machine">Truth Machine</a></span></h3>
-<p>A problem by <a href="/wiki/User:Keymaker" title="User:Keymaker">User:Keymaker</a> to demonstrate usability. It takes a 0 or a 1. If it gets a 1 it outputs an endless sequence of ones. Otherwise it prints 0.
+<h3><span class="mw-headline" id="Truth_Machine">Truth Machine</span></h3>
+<p>A problem by User:Keymaker to demonstrate usability. It takes a 0 or a 1. If it gets a 1 it outputs an endless sequence of ones. Otherwise it prints 0.
 </p>
 <pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@main</span>
  <span style="color: #bd5187;">int</span> <span style="color: #b45a3c;">@c</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:input</span> <span style="color:#5485b6;">"int"</span><span style="color: #031930;">)</span>
@@ -160,7 +159,7 @@ and the work of youtuber <a href="/wiki/User:Truttle1" title="User:Truttle1">Use
 <span style="color: #bd5187;">  out</span> <span style="color: #a06e3b;">0</span>
 <span style="color: #bd5187;"> return</span>
 </pre>
-<h3><span id="Cat_(Echo)"></span><span class="mw-headline" id="Cat_.28Echo.29"><a href="/wiki/Cat" class="mw-redirect" title="Cat">Cat</a> (Echo)</span></h3>
+<h3><span id="Cat_(Echo)"></span><span class="mw-headline" id="Cat_.28Echo.29">Cat (Echo)</span></h3>
 <p>Outputs the input given.
 </p>
 <pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@main</span>
@@ -168,7 +167,7 @@ and the work of youtuber <a href="/wiki/User:Truttle1" title="User:Truttle1">Use
 &#160;<span style="color: #bd5187;">out</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:input</span> <span style="color:#5485b6;">"string"</span><span style="color: #031930;">)</span>
 &#160;<span style="color: #bd5187;">return </span>
 </pre>
-<h3><span class="mw-headline" id="FizzBuzz"><a href="/wiki/FizzBuzz" title="FizzBuzz">FizzBuzz</a></span></h3>
+<h3><span class="mw-headline" id="FizzBuzz">FizzBuzz</span></h3>
 <pre><span style="color: #bd5187;">include</span> <span style="color: #031930;">lib/Math/Ops.bbe</span> <br />
 <span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@main</span>
  <span style="color: #bd5187;">char</span> <span style="color: #b45a3c;">@c</span>
@@ -918,7 +917,7 @@ main
 <pre>bell 
      Don’t you know? A bell goes ding! 
      It makes sound!
-     Args: [HERTZ, [DURATION IN MILLIS]]
+     Args: [HERTZ, [DURATION IN MILLIS
 </pre>
 <h3><span class="mw-headline" id="Example_of_Function_Print">Example of Function Print</span></h3>
 <pre>func @cat
@@ -1183,7 +1182,7 @@ included file are compiled for use.
 </p>
 <ol><li>File A.bbe has the statement <code> include B.bbe</code></li>
 <li>File B.bbe has the statement <code> include A.bbe</code></li></ol>
-<p>These are generally difficult to handle efficiently. While they can be detected by generating a graph of linked files, and checking for a <a href="/wiki/Hamiltonian_cycle" title="Hamiltonian cycle">Hamiltonian cycle</a>. This would be done in polynomial time and slow the interpreter down. Even internationally recognized, professionally implemented languages, like C and Python, are often not implemented in ways that explicitly deal with cyclic references. Explicit handling of cyclic include references is, in general, too costly to bother with. 
+<p>These are generally difficult to handle efficiently. While they can be detected by generating a graph of linked files, and checking for a Hamiltonian cycle. This would be done in polynomial time and slow the interpreter down. Even internationally recognized, professionally implemented languages, like C and Python, are often not implemented in ways that explicitly deal with cyclic references. Explicit handling of cyclic include references is, in general, too costly to bother with. 
 </p><p>The more common, and simpler case, is infinite recursions on the call stack. These are easily demonstrated via tracing and printing the call stack in linear time. Such a case is relevant to cyclic file references because files linked in a cycle are likely to make function calls that produce an infinite recursion. Ie, file A calls a function in file B. Then file B calls a function in file A. In general, if there is an unintentional cyclic file reference, it is probably going to be discovered by means of an infinite recursion anyway, so having an explicit way to detect cycling files is not necessary.
 </p>
 <h2><span class="mw-headline" id="Libraries">Libraries</span></h2>
@@ -1294,8 +1293,8 @@ minDouble
 The convention for naming library files is to write the name of the library and bbe. The Collect file is <b>Collect.bbe</b> in the directory <b>lib\Data</b>
 </p>
 <h2><span class="mw-headline" id="Proof_of_Turing_Completeness">Proof of Turing Completeness</span></h2>
-<h3><span class="mw-headline" id="Proof_by_Translation_to_bf">Proof by Translation to <a href="/wiki/Bf" class="mw-redirect" title="Bf">bf</a></span></h3>
-<p>It is trivial to define a function that can simulate a <a href="/wiki/Bf" class="mw-redirect" title="Bf">bf</a> interpreter. Bf stores memory as cells on a tape. Cells are modified by a movable pointer, exactly like a Turing machine. A list of characters is sufficient to implement the tape.
+<h3><span class="mw-headline" id="Proof_by_Translation_to_bf">Proof by Translation to bf</span></h3>
+<p>It is trivial to define a function that can simulate a bf interpreter. Bf stores memory as cells on a tape. Cells are modified by a movable pointer, exactly like a Turing machine. A list of characters is sufficient to implement the tape.
 </p>
 <pre><span style="color: #bd5187;">func</span> <span style="color: #b45a3c;">@bf</span>
  <span style="color: #bd5187;">list</span> <span style="color: #b45a3c;">@tape</span> <span style="color: #031930;">(</span><span style="color: #bd5187;">:make_empty_list</span> <span style="color: #a06e3b;">30000</span><span style="color: #031930;">)</span>
@@ -1343,7 +1342,7 @@ The convention for naming library files is to write the name of the library and 
 <td><code><span style="color: #bd5187;">bneq</span> <span style="color: #a06e3b;">&amp;tape</span><span style="color: #031930;">[</span><span style="color: #a06e3b;">&amp;pointer</span><span style="color: #031930;">]</span> <span style="color: #a06e3b;">0</span> <span style="color: #b45a3c;">@openBracket</span><span style="color: #031930;">;</span> <span style="color: #bd5187;">label</span> <span style="color: #b45a3c;">@closeBracket</span><span style="color: #031930;">;</span></code>
 </td></tr></tbody></table>
 <p>(The semicolon is an explicit newline.)
-</p><p>Given <a href="/wiki/Bf" class="mw-redirect" title="Bf">bf</a> is Turing complete, and Bunnybell can simulate a bf interpreter. Bunnybell must also be Turing complete.
+</p><p>Given bf is Turing complete, and Bunnybell can simulate a bf interpreter. Bunnybell must also be Turing complete.
 QED
 </p>
 <h2><span class="mw-headline" id="Syntax_Highlighting">Syntax Highlighting</span></h2>
@@ -1631,7 +1630,7 @@ This error is thrown before toppling happens. It stops someone from creating a s
 <h3><span class="mw-headline" id="Variable">Variable</span></h3>
 <p>Data that can change state over time.
 </p>
-<h2><span class="mw-headline" id="ASCII_Table_2"><a href="/wiki/ASCII" title="ASCII">ASCII</a> Table</span></h2>
+<h2><span class="mw-headline" id="ASCII_Table_2">ASCII Table</span></h2>
 <p><i>On mobile phones, many binary values listed here will be interpreted as phone numbers. This gives them a blue, clickable link.</i>
 </p>
 <table class="wikitable sortable">
