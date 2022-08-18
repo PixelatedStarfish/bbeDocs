@@ -50,11 +50,104 @@ table, th, td {
           <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>
 </p><p><br />
 </head>
-    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>BunnyBell is a programming language created by User:PixelatedStarfish in 2022 and it is designed to be a simple, practical language for learning to program. Given this, showcasing this language on the esolangs wiki is certainly ironic, but the esolangs wiki is convenient. 
+   
+</td></tr>
+<tr>
+<td>0001010</td>
+<td>10</td>
+<td>0A</td>
+<td><b>New Line</ <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+BunnyBell is a programming language created by User:PixelatedStarfish in 2022 and it is designed to be a simple, practical language for learning to program. Given this, showcasing this language on the esolangs wiki is certainly ironic, but the esolangs wiki is convenient. 
 </p><p>BunnyBell was initially created as a second major version of MacroBeep, designed to support subroutines. MacroBeep v2.0 diverged to the point where it was best renamed, as a new language entirely.
 </p><p>Alternate spellings are Bunnybell or Bunny Bell. The current version is version 1.2 and the language file extension is <code>.bbe</code>
 </p><p><br />
 </p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Factors_in_Design"><span class="tocnumber">1</span> <span class="toctext">Factors in Design</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Influences:_Shameless_Theft"><span class="tocnumber">2</span> <span class="toctext">Influences: Shameless Theft</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Acknowledgements"><span class="tocnumber">3</span> <span class="toctext">Acknowledgements</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Design_Goals:_Why_Use_BunnyBell.3F"><span class="tocnumber">4</span> <span class="toctext">Design Goals: Why Use BunnyBell?</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Program_Examples"><span class="tocnumber">5</span> <span class="toctext">Program Examples</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Syntax"><span class="tocnumber">6</span> <span class="toctext">Syntax</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a href="#Compiling_and_Interpreting"><span class="tocnumber">7</span> <span class="toctext">Compiling and Interpreting</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#Variables"><span class="tocnumber">8</span> <span class="toctext">Variables</span></a>
+
+<li class="toclevel-1 tocsection-29"><a href="#Lists.2C_Indexing.2C_and_Nesting"><span class="tocnumber">9</span> <span class="toctext">Lists, Indexing, and Nesting</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#Strings_and_Escapes"><span class="tocnumber">10</span> <span class="toctext">Strings and Escapes</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-33"><a href="#Identifiers:_How_to_Use_the_Identifying_Operator_.40"><span class="tocnumber">11</span> <span class="toctext">Identifiers: How to Use the Identifying Operator  <span>@</span></span></a></li>
+<li class="toclevel-1 tocsection-34"><a href="#Labels_and_Conditionals"><span class="tocnumber">12</span> <span class="toctext">Labels and Conditionals</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-37"><a href="#Structs:_Defining_a_Data_Type"><span class="tocnumber">13</span> <span class="toctext">Structs: Defining a Data Type</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-41"><a href="#Functions"><span class="tocnumber">14</span> <span class="toctext">Functions</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-49"><a href="#Macros"><span class="tocnumber">15</span> <span class="toctext">Macros</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-52"><a href="#Files"><span class="tocnumber">16</span> <span class="toctext">Files</span></a></li>
+<li class="toclevel-1 tocsection-53"><a href="#Errors"><span class="tocnumber">17</span> <span class="toctext">Errors</span></a>
+<ul>
+
+</ul>
+</li>
+<li class="toclevel-1 tocsection-60"><a href="#Commands"><span class="tocnumber">18</span> <span class="toctext">Commands</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-70"><a href="#Using_the_Interpreter"><span class="tocnumber">19</span> <span class="toctext">Using the Interpreter</span></a>
+</li>
+<li class="toclevel-1 tocsection-75"><a href="#The_Linker:_Include_Commands"><span class="tocnumber">20</span> <span class="toctext">The Linker: Include Commands</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-79"><a href="#Libraries"><span class="tocnumber">21</span> <span class="toctext">Libraries</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-82"><a href="#Proof_of_Turing_Completeness"><span class="tocnumber">22</span> <span class="toctext">Proof of Turing Completeness</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-84"><a href="#Syntax_Highlighting"><span class="tocnumber">23</span> <span class="toctext">Syntax Highlighting</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-88"><a href="#Interpreter_Extensibility"><span class="tocnumber">24</span> <span class="toctext">Interpreter Extensibility</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-91"><a href="#Test_Cases"><span class="tocnumber">25</span> <span class="toctext">Test Cases</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-98"><a href="#Index"><span class="tocnumber">26</span> <span class="toctext">Index</span></a>
+<ul>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-143"><a href="#ASCII_Table_2"><span class="tocnumber">27</span> <span class="toctext">ASCII Table</span></a></li>
+<li class="toclevel-1 tocsection-144"><a href="#Sources"><span class="tocnumber">28</span> <span class="toctext">Sources</span></a></li>
+</ul>
+</div>
 
 <h2><span class="mw-headline" id="Factors_in_Design">Factors in Design</span></h2>
 <p>Always write the simplest code you can. Never implement a complicated algorithm when a simple one will do.
@@ -730,7 +823,7 @@ Calls to functions are stored in the function tree. The main call is the root of
 <td>foo is a value the type specified; t is generic for an int, float, double, long, char, string, list, path, or struct.
 </td></tr>
 </tbody></table>
-<h3><span class="mw-headline" id="Using_Function_Calls_as_Arguments:_The_Call_Passing_Operator_:">Using Function Calls as Arguments: The Call Passing Operator <code><span style="color: #bd5187;">:</span></code></span></h3>
+<h3><span class="mw-headline" id="Function_Calls_as_Arguments:_The_Call_Passing_Operator_:">Function Calls as Arguments: The Call Passing Operator <code><span style="color: #bd5187;">:</span></code></span></h3>
 <p>Function calls are first class in this language. They can be assigned to a cell, passed to a function, or returned from a function.
 </p>
 <pre><span style="color: #bd5187;">foo :bar</span> <span style="color: #655d5d;">#passes what bar returns to foo.</span>
@@ -840,8 +933,7 @@ del
 </p>
 <h2><span class="mw-headline" id="Errors">Errors</span></h2>
 <h3><span class="mw-headline" id="Error_Codes">Error Codes</span></h3>
-<pre>Error&#160;:::::::::::::::::::::::::::::::::::: (0)
-Syntax Error [Command Doc] [Int Range]&#160;::: (1)
+<pre>Syntax Error [Command Doc] [Int Range]&#160;::: (1)
 File Not Found&#160;::::::::::::::::::::::::::: (2)
 End Of File&#160;:::::::::::::::::::::::::::::: (3)
 Undefined Variable&#160;::::::::::::::::::::::: (5)
@@ -865,6 +957,7 @@ Bad Argument&#160;:::::::::::::::::::::::::::: (20)
 Bad Reference&#160;::::::::::::::::::::::::::: (21)
 Cannot Modify Constant&#160;:::::::::::::::::: (22)
 Cannot Nest Blocks&#160;:::::::::::::::::::::: (23)
+Error&#160;::::::::::::::::::::::::::::::::::: (24)
 </pre>
 <p>To clarify the use of adjectives: <b>Undefined</b> means that the error is thrown by an argument that requires a definition in source. <b>Conflict</b> occurs when the next command to execute cannot be determined because of a shared name or header. <b>Bad</b> means that the erroneous code is incomputable, like a negative wait time, or a reference to data that is not there.
 </p><p>Whenever possible, an error should describe the function and instruction at which it occurred.
@@ -1091,8 +1184,8 @@ impl
 <h3><span class="mw-headline" id="Flagging">Flagging</span></h3>
 <p>The flag can be in four states
 </p>
-<pre>-m  mute the bell
--d  debugger on
+<pre> -m mute the bell
+ -d debugger on
 -dm mute the bell and debugger on
 -md mute the bell and debugger on
 </pre>
@@ -1252,8 +1345,25 @@ maxDouble
 minDouble
   returns minimum double value
 </pre>
-<p><br />
-The convention for naming library files is to write the name of the library and bbe. The Collect file is <b>Collect.bbe</b> in the directory <b>lib\Data</b>
+<p><b>Compare</b>
+</p><p>This is a library for comparing collections. Collections are converted to integers and evaluated.
+</p><p>How collections are compared:
+</p>
+<ul><li>Strings are a sum of characters.</li>
+<li>Lists are a sum of items.</li>
+<li>Structs are a sum of attributes.</li>
+<li>Functions are always 0, as they are not generally comparable.</li></ul>
+<p>Two sums A and B, are calculated then B - A is returned.
+Equal values return 0. B &gt; A returns a positive value. A &lt; B returns a negative value.
+</p>
+<pre>compare
+  Compares two strings.
+compare
+  Compare two lists recursively. 
+compare
+  Compare two structs by attributes recursively. 
+</pre>
+<p>The convention for naming library files is to write the name of the library and bbe. The Collect file is <b>Collect.bbe</b> in the directory <b>lib\Data</b>
 </p>
 <h2><span class="mw-headline" id="Proof_of_Turing_Completeness">Proof of Turing Completeness</span></h2>
 <h3><span class="mw-headline" id="Proof_by_Translation_to_bf">Proof by Translation to bf</span></h3>
@@ -1411,13 +1521,27 @@ Also note that as implied in the palettes, the operators are highlighted accordi
 <font color="#031930">error</font>
 </pre>
 <h2><span class="mw-headline" id="Interpreter_Extensibility">Interpreter Extensibility</span></h2>
-<p>The interpreter should be implemented such that it can accept command modules, such as <code>.bbim</code> files that can define additional commands for the interpreter. These files would be located in a directory in <b>bbe</b> called <b>ext</b>. These extended commands would be implemented in source via a compiler command. <b>impl</b>.
-</p><p>Files would describe commands with the BunnyBell function syntax. The body of the function would run a <b>run</b> command that takes a path to a file that can be run according to the language that implements the BunnyBell interpreter. The challenge is file integration.
+<p>The interpreter should be implemented such that it can accept command modules, such as <code>.bbim</code> files that can define additional commands for the interpreter. These files would be located in a directory in <b>bbe</b> called <b>ext</b>. These extended commands would be implemented in source via a compiler command. <code><span style="color: #bd5187;">impl</span></code>. These <code>.bbim</code> are called extensions.
+</p>
+<h3><span class="mw-headline" id="Defining_Commands">Defining Commands</span></h3>
+<p>Files would describe commands with command blocks. The command takes an identifier as a name such as <code><span style="color: #bd5187;">comm</span> <span style="color: #b45a3c;">@foo</span></code>. The body of the command would run a <code><span style="color: #bd5187;">run</span></code> command that one, takes a path to a file that is written in the same language as the Bunnybell interpreter, such that it can be run via the language that implements Bunnybell; and two, takes a reference (variable) that describes a function in the file described by argument one.
+</p><p>The file described by the run command (let's call it A) would be a file that includes necessary resources, and wraps the code that 
+describes the extended command in a function. The <code>.bbim</code> file would be interpreted such that when the commands defined in the  <code>.bbim</code> are executed by the Bunnybell interpreter, the relevant function in file A is run for each command.
+</p><p>Here is an example:
+</p>
+<pre><span style="color: #bd5187;">comm</span> <span style="color: #b45a3c;">@foo</span>
+ <span style="color: #bd5187;">run</span> <span style="color: #031930;">path_to_A</span> <span style="color: #a06e3b;">&amp;function_in_A</span>
+<span style="color: #bd5187;">_comm</span>
+</pre>
+<h3><span class="mw-headline" id="Defining_Errors">Defining Errors</span></h3>
+<p>To throw an error, simply have the run command return the error code needed. 0 indicates that there is no error. Codes 1 to 24 are error codes. 25 and above are equivalent to 24. Negative values are interpreted as absolute values, such that the positive error code is returned.
 </p>
 <h2><span class="mw-headline" id="Test_Cases">Test Cases</span></h2>
 <h3><span class="mw-headline" id="Parser_Tests">Parser Tests</span></h3>
 <ul><li>Test each type of comment.</li>
-<li>Test each interfacing function.</li></ul>
+<li>Test strings and docs strings.</li>
+<li>Test for parenthesis and brackets</li>
+<li>Test each operation.</li></ul>
 <h3><span class="mw-headline" id="Command_Tests">Command Tests</span></h3>
 <p>Note that each command should be tested with no arguments, expected arguments, and unexpected arguments.
 </p>
@@ -2415,5 +2539,6 @@ Wikimedia Foundation. (2022, January 14). Turing machine. Wikipedia.
 Retrieved January 16, 2022, 
 from <a rel="nofollow" class="external free" href="https://en.wikipedia.org/wiki/Turing_machine">https://en.wikipedia.org/wiki/Turing_machine</a>
 </pre>
+
 </body><!-- Cached 20220801220819 -->
 </html>
