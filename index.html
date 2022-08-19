@@ -147,9 +147,9 @@ BunnyBell is a programming language created by User:PixelatedStarfish in 2022 an
 <p>Always write the simplest code you can. Never implement a complicated algorithm when a simple one will do.
 </p>
 <h3><span class="mw-headline" id="On_Languages_Designed_for_Pedagogy:_Thoughts_on_Stacking_Blocks">On Languages Designed for Pedagogy: Thoughts on Stacking Blocks</span></h3>
-<p>Many languages with a pedagogical design philosophy are written for children. Such languages typically employ a from of graphics based coding in specialized IDEs (Integrated Development Environments) in which programming is accomplished by clicking and dragging colorful blocks. These blocks have statements written on them and fit together like puzzle pieces. In general, I believe these languages are a success. A child can enjoy programming a video game, or an animated story without dealing with abstract data structures and advanced concepts in object oriented programming. Instinctively, one can learn how to read source code and debug it; how to use loops, variables, and conditional statements. Then it comes time to get bolder, try out some data structures. Code gets long, hundreds, or even thousands of blocks long. The IDE starts to slow and lag. The programmer hits a ceiling, and it comes time to transition to a more efficient language, one that describes source with efficient, computer-friendly text. That is the hard part.
-</p><p>Most high-level language are not based on stacking colorful blocks. They have keywords instead. In a language like Scratch, blocks are commands, or arguments for commands. Even when a block is completely isolated from your program, you can click on it and watch it do something. A cat goes left. A variable is set. A list is emptied. Not all keywords have this property. Many keywords modify groups of statements (which are also called blocks and opened and closed with braces. I call them groups here to avoid confusion.) The if keyword makes this block an if statement. The fn keyword means this group is a function. The private keyword modifies the fn keyword, indicating this function cannot be accessed outside the encapsulating class. Keywords can express abstract syntax, but many do not constitute a serviceable program in isolation. They do not do anything without context. This is one of a few factors that makes transitioning from Scratch to a C-style language hard.
-</p><p>BunnyBell commands are designed to be at a halfway point between Scratch blocks and C-style keywords.  Most commands are programs that operates independent of other commands, in a manner similar to a Scratch block, or a function. However, BunnyBell commands are also versatile enough to describe functions, macros, and data structures, in manner similar to a C-style language. 
+<p>Many languages with a pedagogical design philosophy are written for children. Such languages typically employ a form of graphics based coding in specialized IDEs (Integrated Development Environments) in which programming is accomplished by clicking and dragging colorful blocks. These blocks have statements written on them and fit together like puzzle pieces. In general, I believe these languages are a success. A child can enjoy programming a video game, or an animated story without dealing with abstract data structures and advanced concepts in object oriented programming. Instinctively, one can learn how to read source code and debug it; how to use loops, variables, and conditional statements. Then it comes time to get bolder, try out some data structures. Code gets long, hundreds, or even thousands of blocks long. The IDE starts to slow and lag. The programmer hits a ceiling, and it comes time to transition to a more efficient language, one that describes source with efficient, computer-friendly text. That is the hard part.
+</p><p>Most high-level languages are not based on stacking colorful blocks. They have keywords instead. In a language like Scratch, blocks are commands, or arguments for commands. Even when a block is completely isolated from your program, you can click on it and watch it do something. A cat goes left. A variable is set. A list is emptied. Not all keywords have this property. Many keywords modify groups of statements (which are also called blocks and opened and closed with braces. I call them groups here to avoid confusion.) The if keyword makes this block an if statement. The fn keyword means this group is a function. The private keyword modifies the fn keyword, indicating this function cannot be accessed outside the encapsulating class. Keywords can express abstract syntax, but many do not constitute a serviceable program in isolation. They do not do anything without context. This is one of a few factors that makes transitioning from Scratch to a C-style language hard.
+</p><p>BunnyBell commands are designed to be at a halfway point between Scratch blocks and C-style keywords.  Most commands are programs that operate independent of other commands, in a manner similar to a Scratch block, or a function. However, BunnyBell commands are also versatile enough to describe functions, macros, and data structures, in a manner similar to a C-style language.
 </p>
 <h3><span id="Clarity:_Why_no_Braces?"></span><span class="mw-headline" id="Clarity:_Why_no_Braces.3F">Clarity: Why no Braces?</span></h3>
 <p>Many people like braces. <code>from future import __braces__</code> is a joke among python programmers. Yes, braces are great for delineating blocks of statements, but they are easily disorganized and do not describe the blocks well. Consider this, often found at the end of a source file:
@@ -182,8 +182,8 @@ and the work of youtuber User:Truttle1.
 </p><p>Of course I should thank my loved ones for their support.
 </p>
 <h2><span id="Design_Goals:_Why_Use_BunnyBell?"></span><span class="mw-headline" id="Design_Goals:_Why_Use_BunnyBell.3F">Design Goals: Why Use BunnyBell?</span></h2>
-<p>This language designed to learn by tinkering. It is designed for students to practice essential programming skills, such as tracing, debugging, and memory management.
-</p><p>Someone can learn to code with any programming language, but few are designed for learning, and fewer still are designed for an adult learner. Why is transitioning from a graphical, block-based language, to a text-based one so hard? Well, there are constructs and conventions to memorize. There might even be three different kinds of grouping symbols: (parentheses), [brackets], {braces}. A new programmer has a lot questions. How do I install this? Which version am I using? How do I do this or that? What is this thing work again? What does this error mean? BunnyBell is designed to ensure a new programmer can stop stressing, and focus on expressing their programs in code.
+<p>This language is designed to learn by tinkering. It is designed for students to practice essential programming skills, such as tracing, debugging, and memory management.
+</p><p>Someone can learn to code with any programming language, but few are designed for learning, and fewer still are designed for an adult learner. Why is transitioning from a graphical, block-based language, to a text-based one so hard? Well, there are constructs and conventions to memorize. There might even be three different kinds of grouping symbols: (parentheses), [brackets], {braces}. A new programmer has a lot of questions. How do I install this? Which version am I using? How do I do this or that? What is this thing again? What does this error mean? BunnyBell is designed to ensure a new programmer can stop stressing, and focus on expressing their programs in code.
 </p>
 <ul><li>BunnyBell has a simplified syntax, for programs that are easier to write, organize, trace, and debug.</li>
 <li>Lexemes are descriptive, such that the tokens they represent are clearly indicated.</li>
@@ -278,10 +278,10 @@ Comments are indicated with hashes.
 <h3><span class="mw-headline" id="Argument_Tokens">Argument Tokens</span></h3>
 <p>A command can take a few different tokens as arguments: 
 </p>
-<ul><li>An IDENTIFER identifies something. Its used to create a variable, function, or struct.</li>
+<ul><li>An IDENTIFIER identifies something. It is used to create a variable, function, or struct.</li>
 <li>A FUNCTION CALL is a function name preceded by a colon. This call can be passed to a function, returned by a function, or evaluated.</li>
 <li>FUNCTIONS are data and references can be made to them.</li>
-<li>An VAR is an argument that refers to a cell with the refer operator (<b>&amp;</b>). Any sequence of refer operators followed by an integer is an VAR.</li>
+<li>A VAR is an argument that refers to a cell with the refer operator (<b>&amp;</b>). Any sequence of refer operators followed by an integer is a VAR.</li>
 <li>A VALUE is any token that can be stored in a variable. These can be NUMBERS (longs, ints, floats, doubles, chars); COLLECTIONS (strings lists, and words); or STRUCTS (a data type defined in source.)</li>
 <li>A LIST is a data type that can store values of multiple types. LISTS are COMPLEX COLLECTIONS, so are STRUCTS and FUNCTIONS.</li>
 <li>A STRING is a sequence of printable characters framed by double quotes. Each string is one argument, even if it includes spaces. A STRING is a SIMPLE COLLECTION, because it can only store data of one type, characters.</li>
@@ -391,7 +391,7 @@ Comments are indicated with hashes.
 <tr>
 <td><code><span style="color: #031930;">*</span></code></td>
 <td>Star</td>
-<td>Gets the contents of a directory loads files into the linker.
+<td>Gets the contents of a directory and load files into the linker.
 </td></tr>
 <tr>
 <td><code><span style="color: #031930;">-&gt;</span></code></td>
@@ -446,12 +446,12 @@ Comments are indicated with hashes.
 <tr>
 <td><code><span style="color: #655d5d;">#</span></code></td>
 <td>Hash</td>
-<td>Starts inline comment. Everything to the right is a comment.
+<td>Start inline comment. Everything to the right is a comment.
 </td></tr>
 <tr>
 <td><code><span style="color: #655d5d;">##</span></code></td>
 <td>Double Hash</td>
-<td>Frames multiple line comment.
+<td>Frames a multiple line comment.
 </td></tr>
 </tbody></table>
 <h3><span class="mw-headline" id="Grammar_in_EBNF">Grammar in EBNF</span></h3>
@@ -629,7 +629,7 @@ Casting with collections gives an unexpected type error.
 Referring to an index that does not exist gives a bad reference error.
 </p>
 <h2><span class="mw-headline" id="Strings_and_Escapes">Strings and Escapes</span></h2>
-<p>Strings are interpreted literally, as text. A string in framed by quotes and can include white space. A string is always one argument, even one with spaces in it.
+<p>Strings are interpreted literally, as text. A string is framed by quotes and can include white space. A string is always one argument, even one with spaces in it.
 </p><p>For example, consider this line.
 </p>
 <pre><span style="color: #bd5187;">out</span> <span style="color: #5485b6;">"Hello World &amp;s" </span>
@@ -689,7 +689,7 @@ World
 <span style="color: #bd5187;">return</span>
 </pre>
 <h2><span id="Identifiers:_How_to_Use_the_Identifying_Operator_@"></span><span class="mw-headline" id="Identifiers:_How_to_Use_the_Identifying_Operator_.40">Identifiers: How to Use the Identifying Operator <code> <span style="color: #b45a3c;">@</span></code></span></h2>
-<p>These are used when naming a construct, like a function, label, variable, or struct. This practices enforces readability and prevents abuses of syntax. In earlier versions, untyped words were used for naming, but this was problematic.
+<p>These are used when naming a construct, like a function, label, variable, or struct. This practice enforces readability and prevents abuses of syntax. In earlier versions, untyped words were used for naming, but this was problematic.
 </p><p>Identifying a variable:
 </p>
 <pre><span style="color: #bd5187;">int</span> <span style="color: #b45a3c;">@i</span> <span style="color: #a06e3b;">10</span>
@@ -792,7 +792,7 @@ Calls to functions are stored in the function tree. The main call is the root of
 <h3><span class="mw-headline" id="The_Basics:_Functions_and_Calls">The Basics: Functions and Calls</span></h3>
 <p>Functions let a programmer define their own commands as subprograms, and they can be called to perform a task. A function call executes the sub program defined by a function. Calls cannot run include statements, but they can take input, store information in memory, and output to calling (parent) function calls. After processing include statements, all BunnyBell programs call the main function implicitly. Every function called from the main function is a child of the main function call.
 </p><p>The ‘func’ command starts a function definition. It takes a function name and input arguments for the function. Functions end with a ‘return’ command, which can output to the parent call.
-</p><p>When a function is called execution stops for the parent call, and resumes when the child call completes execution. The program ends when the main call completes or when a halt command executes.
+</p><p>When a function is called, execution stops for the parent call, and resumes when the child call completes execution. The program ends when the main call completes or when a halt command executes.
 </p>
 <h3><span class="mw-headline" id="Specifying_Function_Input_Types">Specifying Function Input Types</span></h3>
 <p>Sometimes a programmer needs to specify what type of arguments their function can take: 
@@ -897,7 +897,7 @@ To swap 10 for 11, three lines need to be changed.
  <span style="color: #bd5187;">give</span> <span style="color: #a06e3b;">&amp;b</span><span style="color: #031930;">[</span><span style="color: #a06e3b;">2</span><span style="color: #031930;">]</span> <span style="color: #4b8b8b;">!foo</span> 
 <span style="color: #bd5187;">return</span>
 </pre>
-<p>Only one line needs to be changed. Its nicer.
+<p>Only one line needs to be changed. It's nicer.
 </p>
 <h3><span class="mw-headline" id="Blocks_2">Blocks</span></h3>
 <p>Macros can be multiple lines long, which is great for consolidating repeated code and simplifying source.
@@ -967,7 +967,7 @@ main
 <pre>bell 
      Don’t you know? A bell goes ding! 
      It makes sound!
-     Args: [HERTZ, [DURATION IN MILLIS
+     Args: [HERTZ, [DURATION IN MILLIS]]
 </pre>
 <h3><span class="mw-headline" id="Example_of_Function_Print">Example of Function Print</span></h3>
 <pre>func @cat
@@ -999,7 +999,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 Like all block statements, handles cannot nest. Here is an excerpt from the Commands section:
 </p>
 <pre>handle 
-     Go to the label in any of the listed errors occurs in a handle block.
+     Go to the label if any of the listed errors occurs in a handle block.
      Args: LABEL, LIST OF ERRCODES
 _handle
      Ends the handle block above.
@@ -1055,7 +1055,7 @@ ovwr
 bell 
      Don’t you know? A bell goes ding! 
      It makes sound!
-     Args: [HERTZ, [DURATION IN MILLIS]]
+     Args: [HERTZ, [DURATION IN MILLIS
 </pre>
 <h3><span class="mw-headline" id="Conditionals_and_Loops_2">Conditionals and Loops</span></h3>
 <pre>label
@@ -1118,7 +1118,7 @@ take
 </pre>
 <h3><span class="mw-headline" id="Error_Handling">Error Handling</span></h3>
 <pre>handle 
-     Go to the label in any of the listed errors occurs in a handle block.
+     Go to the label if any of the listed errors occurs in a handle block.
      Args: LABEL, LIST OF ERRCODES
 _handle
      Ends the handle block above.
@@ -1424,7 +1424,7 @@ The color scheme below is not a mandate, but an attempt.
 <li>MACROS range from green to blue</li>
 <li>STRINGS and DOC STRINGS range from blue to purple.</li>
 <li>CALLS and COMMANDS range from purple to pink.</li>
-<li>COMMENTS are grey.</li>
+<li>COMMENTS are gray.</li>
 <li>PARENTHESES, BRACKETS, SEMI-COLONS, DOTS, LABELS, and PATHS are black or white.</li>
 <li>BLACK is hex code #031930</li>
 <li>WHITE is hex code #fce6cf</li></ul>
@@ -1588,7 +1588,7 @@ describes the extended command in a function. The <code>.bbim</code> file would 
 </p><p>If you prefer to run such a program while you sleep, you can mute the bell. Just know that if you ignore the computer for too long, it may crash out of spite, and you will wake up to a friendly error message, and you have to plan your evening around the needs of an old computer, and you will question your life choices.
 </p>
 <h3><span class="mw-headline" id="Bf">Bf</span></h3>
-<p>A polite name for a language created by Urban Müller in 1993. This language is designed to be the simplest language possible, such that it has the smallest complier possible. It runs a Turing machine on a tape of bytes and is proven to be Turing complete.
+<p>A polite name for a language created by Urban Müller in 1993. This language is designed to be the simplest language possible, such that it has the smallest compiler possible. It runs a Turing machine on a tape of bytes and is proven to be Turing complete.
 </p>
 <h3><span class="mw-headline" id="Bit">Bit</span></h3>
 <p>The fundamental unit of information. A bit can be in one of two states. You can think of it as a lightbulb. A bit can be on or off, 0 or 1, true or false. A contiguous set of bits is a word. A word of 2 bits has four states. 3 bits have 8 states. One more bit increases the number of states to the next power of two.
@@ -1617,7 +1617,7 @@ describes the extended command in a function. The <code>.bbim</code> file would 
 <p>In computation, a compiler is a program that reads source code and converts it into a form that can be interpreted.
 </p>
 <h3><span class="mw-headline" id="Console">Console</span></h3>
-<p>This run programs, takes input, and displays output.
+<p>This runs programs, takes input, and displays output.
 </p>
 <h3><span class="mw-headline" id="Constant">Constant</span></h3>
 <p>Data that cannot change state over time.
@@ -1626,13 +1626,13 @@ describes the extended command in a function. The <code>.bbim</code> file would 
 <p>A folder. It stores files.
 </p>
 <h3><span class="mw-headline" id="EBNF">EBNF</span></h3>
-<p>This is Extended Bakus-Naur Form. It is a meta-syntax that describes the syntax of programming languages.
+<p>This is Extended Backus-Naur Form. It is a meta-syntax that describes the syntax of programming languages.
 </p>
 <h3><span class="mw-headline" id="Error">Error</span></h3>
 <p>Errors are the seatbelt that keeps your computer safe. In this analogy, your program is a car and your computer is the driver. Errors protect your computer when your program does something that is unexpected. Errors are distinguished by error codes.
 </p>
 <h3><span class="mw-headline" id="Esolang">Esolang</span></h3>
-<p>An esolang is an esoteric programming language. These are usually designed by hobbyists to experiment with concepts in programming and computation. BunnyBell is the least esoteric programming language in the history of the esolangs wiki, and it is documented there out of convenience. It that upsets you, perhaps you should consider if being upset over such trivial things is contributing positively to your life.
+<p>An esolang is an esoteric programming language. These are usually designed by hobbyists to experiment with concepts in programming and computation. BunnyBell is the least esoteric programming language in the history of the esolangs wiki, and it is documented there out of convenience. If that upsets you, perhaps you should consider if being upset over such trivial things is contributing positively to your life.
 </p>
 <h3><span class="mw-headline" id="File">File</span></h3>
 <p>A happy little home for data.
